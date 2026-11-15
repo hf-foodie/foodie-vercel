@@ -2,14 +2,14 @@ const {test}=require('node:test')
 const assert=require('node:assert/strict')
 const {spawnSync}=require('node:child_process')
 const fs=require('node:fs'),os=require('node:os'),path=require('node:path')
-test('authentication regression suite rejects deliberately removed origin guard',()=>{
- const env={...process.env,P2_TEST_REMOVE_ORIGIN_CHECK:'1'}
+test('preview regression suite rejects deliberately removed write guard',()=>{
+ const env={...process.env,P2_TEST_REMOVE_PREVIEW_WRITE_GUARD:'1'}
  for(const name of Object.keys(env))if(name.startsWith('NODE_TEST_'))delete env[name]
  const run=spawnSync(process.execPath,['--test','--test-reporter=tap','scripts/p1-auth.test.cjs'],{
    encoding:'utf8',env,timeout:30000,
  })
  assert.notEqual(run.status,0)
- assert.match(run.stdout,/not ok .*rejects foreign origin/)
+ assert.match(run.stdout,/not ok .*preview refuses every write/)
 })
 test('release manifest detects changed and unexpected files',()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'foodie-artifact-'))

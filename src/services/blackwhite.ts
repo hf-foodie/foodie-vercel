@@ -1,3 +1,4 @@
+import { customFetch } from '@/lib/fetch'
 import { apiBase } from '@/lib/server-session'
 
 
@@ -19,7 +20,7 @@ export async function getAllBackWhiteList(): Promise<TBlackWhite[]> {
     }
 
     const baseUrl = apiBase();
-    const response = await fetch(`${baseUrl}/blackwhites`, {
+    const response = await customFetch(`${baseUrl}/blackwhites`, {
         headers,
         cache: 'no-store'
     }).catch(() => null);

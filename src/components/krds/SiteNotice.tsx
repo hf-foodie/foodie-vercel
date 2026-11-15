@@ -46,7 +46,7 @@ export default function SiteNotice() {
         <ul className={styles.changes}>
           <li><strong>닉네임 기반의 블라인드 서비스</strong><p>우리 서비스는 블라인드 기반으로 운영합니다. ※ 회원가입 시 사용한 닉네임 기반으로 운영</p></li>
           <li><strong>KRDS 디자인 스타일로 개편</strong><p>PC와 모바일에서 일관되고 읽기 쉬운 화면으로 바뀌었습니다.</p></li>
-          <li><strong>회원의 맛집 등록·수정 참여 기능 추가</strong><p>로그인 후 맛집과 후기를 등록하고, 달라진 식당 정보는 수정 제안으로 알려주세요. 회원의 제안은 매니저·관리자가 검토하며, 매니저·관리자는 직접 수정할 수 있습니다.</p></li>
+          <li><strong>회원의 맛집 등록·수정 참여 기능 추가</strong><p>인터넷 체험 버전에서는 기존 맛집·후기·댓글을 조회할 수 있습니다. 회원가입·등록·수정·댓글 작성은 내부망에 정식 서비스 오픈 후 이용가능합니다.</p></li>
         </ul>
         <nav className={styles.links} aria-label="처음 이용하는 분을 위한 안내">
           <Link href="/about" onClick={close}><strong>오늘뭐먹지 소개 →</strong><span>서비스와 운영진을 알아보세요.</span></Link>
@@ -62,3 +62,4 @@ export default function SiteNotice() {
     </div>
   </Dialog>
 }
+

@@ -1,3 +1,1 @@
-import { Suspense } from 'react'
-import AnalyticsClient from './AnalyticsClient'
-export default function Page(){return <Suspense><AnalyticsClient/></Suspense>}
+export {default} from '@/components/PreviewUnavailable'

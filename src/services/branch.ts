@@ -1,3 +1,4 @@
+import { customFetch } from '@/lib/fetch'
 import { apiBase } from '@/lib/server-session'
 import {TBranch} from "@/data/types";
 import {branches} from "@/data/branches";
@@ -7,7 +8,7 @@ export async function getBranches(token: string) : Promise<TBranch[]> {
     const branchesWithCount = await Promise.all(
         branches.map(async (branch) => {
             try {
-                const response = await fetch(`${baseUrl}/restaurants/count?address=${encodeURIComponent(branch.handle)}`, {
+                const response = await customFetch(`${baseUrl}/restaurants/count?address=${encodeURIComponent(branch.handle)}`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },

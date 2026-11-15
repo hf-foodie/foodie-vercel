@@ -162,7 +162,7 @@ export default function CommunicationDetail() {
                     <Link className="kr-link" href="/login">
                       로그인
                     </Link>{' '}
-                    후 댓글을 남길 수 있습니다.
+                    · 댓글 작성은 내부망에 정식 서비스 오픈 후 이용가능
                   </p>
                 )}
                 <div>

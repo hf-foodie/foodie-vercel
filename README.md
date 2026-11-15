@@ -1,47 +1,37 @@
-# 오늘뭐먹지 외부 테스트 웹 (Vercel)
+# 오늘뭐먹지 — 인터넷 체험 버전
 
-사내망용 Front의 최신 화면을 별도 외부 테스트 API에 연결하는 웹 프로젝트입니다. 맛집블로그(`/blogs`), 공통 헤더, REST 자원 API 변경을 포함합니다. Java API 서버와 H2 DB는 Vercel에 포함되지 않습니다.
+DB나 외부 API 서버 없이 Vercel에서 실행하는 읽기 전용 버전입니다. 사내망의 실제 운영 버전은 [foodie](https://github.com/hf-foodie/foodie)입니다.
 
-## 구성
+## Vercel 배포
 
-브라우저 → Vercel Next.js(화면·HttpOnly 인증 쿠키·동일 출처 API 프록시) → 외부 테스트 HTTPS API → 테스트 DB·사진 저장소.
+1. Vercel → Add New Project → GitHub `hf-foodie/foodie-vercel`을 Import합니다.
+2. Framework: **Next.js**, Root Directory: **.**, Node.js: **24.x**. 설치 `npm ci`, 빌드 `npm run build`.
+3. **환경 변수와 DB 연결은 필요 없습니다.** 이전에 설정한 API_URL·NEXT_PUBLIC_API_URL·APP_ORIGIN·PROTOCOL 및 인증 관련 비밀값이 있으면 삭제하세요.
+4. Deploy를 실행하고 발급된 URL로 접속합니다. 이후 main 브랜치 변경은 연결된 Vercel 프로젝트가 자동 배포합니다.
 
-운영 DB, 운영 비밀번호, JWT 키, 업로드 스냅샷, 사내망 ZIP은 이 저장소에 넣지 않습니다. 테스트 서버는 별도 DB·키·계정·사진 저장소를 사용해야 합니다. 신규 코드 기준 API는 `hf-foodie/server`의 `dfa9cbe` 이후 버전을 사용합니다. 이 프로젝트의 화면 기준은 Front `de21d5f`입니다.
+## 포함된 정적 자료
 
-## Vercel 설치 순서
+2026-11-15 스냅샷: 식당 380곳, 후기 60건, 후기 댓글 21건, 소통공간 글 2건과 댓글, 흑백요리사·인턴·사장님·부사장님·사내커플 추천, 대표 사진.
 
-1. Vercel에서 GitHub `hf-foodie/foodie-vercel`을 Import합니다. Framework는 Next.js, Root Directory는 저장소 루트입니다.
-2. Node.js 24.x를 선택합니다. 실제 제공되는 Node 버전이 package.json의 보안 최소 버전을 충족하는지 빌드 로그에서 확인합니다.
-3. 서버 전용 환경 변수 `API_URL`에 외부 테스트 API의 HTTPS 주소를 입력합니다. 마지막 슬래시는 생략합니다.
-4. `APP_ORIGIN`에는 실제 웹 주소(예: `https://your-project.vercel.app`)를 입력하고 `PROTOCOL=https`를 설정합니다. 도메인 변경 시 함께 수정하고 재배포합니다.
-5. `NEXT_PUBLIC_API_URL`은 설정하지 않습니다. 브라우저는 `/api/backend`만 사용합니다. DB 계정·JWT 비밀키는 Vercel에 넣지 않습니다.
-6. Preview에서도 별도 환경 변수를 설정합니다. 동적 Preview 주소를 사용할 경우 APP_ORIGIN을 해당 배포 주소에 맞춰야 쓰기 요청이 허용됩니다.
-7. 테스트 대상자를 초대한 뒤 로그인·검색·블로그·북마크·수정 제안·관리 권한·로그아웃을 점검합니다. 외부 테스트가 끝나면 프로젝트와 테스트 서버의 접근을 종료합니다.
+사용자가 공개를 승인한 닉네임·후기·댓글을 포함합니다. 회원 로그인 ID·이메일·비밀번호 해시·복구 정보·토큰·IP·검색 이력·개인 북마크는 포함하지 않습니다. 화면 연결용 작성자 ID는 로그인 불가능한 상수로 대체했습니다. 공개 데이터는 src/data/preview-snapshot.json, 사진은 public/images에 들어 있습니다.
 
-검색 엔진 수집 방지 헤더를 추가했습니다. 이는 접근 제어가 아니므로 Vercel Deployment Protection과 테스트 API 접근 정책을 별도로 설정하세요.
+식당/후기 검색·필터·정렬·페이지 이동·상세·사진·기존 댓글 조회를 제공합니다. 회원가입·로그인·비밀번호 복구·내 계정·식당 등록/수정·댓글 작성·좋아요·북마크·관리 기능은 **“내부망에 정식 서비스 오픈 후 이용가능”**으로 안내합니다. 쓰기 API도 서버에서 405로 거부합니다. 통계 이벤트를 수집하거나 전송하지 않습니다.
 
-## 외부 API 준비 및 검증
+Next.js는 번들된 JSON을 읽어 화면과 조회 API를 제공합니다. 별도 Java·H2·외부 API·인증 서버가 필요 없으며, Vercel 파일시스템에 데이터를 저장하지 않습니다. 순수 HTML export 방식은 아닙니다.
 
-- 최신 Server를 별도 서버에서 실행하고 신뢰할 수 있는 HTTPS 인증서를 적용합니다. H2를 유지할 경우 단일 API 인스턴스와 영속 디스크가 필요합니다. 임시 파일시스템이나 다중 인스턴스에서 파일 DB를 공유하지 않습니다.
-- 테스트 DB 스키마와 테스트 전용 계정·역할을 준비합니다. 운영 DB를 복사하지 않습니다.
-- API가 `/sessions`, `/session-tokens`, `/restaurants`, `/posts`, `/post-images` 등 최신 경로를 제공하는지 확인합니다.
-- JWT는 테스트 서버에서 별도로 생성하고 운영 키를 재사용하지 않습니다.
-- 프록시의 클라이언트 IP 신뢰 옵션은 기본 비활성 상태입니다. 전달 헤더를 그대로 신뢰하지 않습니다. 서버의 IP별 제한은 프록시 IP로 집계될 수 있으므로 외부 ingress의 IP 전달·보호 정책을 검증해야 합니다.
-- 사용자 역할 확인, 현재 기기 로그아웃, 수정 승인, 중복 북마크·좋아요, 상세→목록 조건 복원을 점검합니다.
+## 로컬 실행과 검증
 
-## 사진 업로드: 공개 전 해결할 제약
+- npm ci
+- npm run typecheck
+- npm test
+- npm run lint:check
+- npm run build
+- npm start
 
-Vercel Functions 요청/응답 본문 제한은 4.5MB입니다. 현재 앱은 최대 5MB 사진을 같은 출처 프록시로 전송하므로 큰 사진 업로드/조회는 Vercel 제한에 걸릴 수 있습니다. 따라서 현재 구성만으로 기존 5MB 정책의 완전한 검증을 완료했다고 볼 수 없습니다.
+DB 없는 조회, 쓰기 API 차단, 민감 필드 제외, 검색·페이지 이동 등을 테스트합니다. 사용하지 않는 주소를 API_URL로 설정해도 정적 조회가 정상 동작하는 것을 별도 포트에서 확인했습니다.
 
-5MB 정책을 그대로 시험하려면 테스트 API에 인증된 일회용 업로드·조회 URL 또는 외부 저장소의 서명 URL 방식을 추가해야 합니다. 테스트 서버·저장소가 정해진 뒤 구현·검증합니다. 먼저 작은 사진으로 기본 흐름을 확인하되 이를 전체 업로드 검증으로 대체하지 않습니다.
+## 데이터 갱신
 
-## 현재 준비 상태
+공개 범위를 다시 검토한 뒤 운영 준비 PC에서 `PREVIEW_SOURCE_URL`을 설정하고 `node scripts/export-preview.cjs`를 실행합니다. 실제 사내망 DB나 인증 비밀값을 커밋하지 않습니다. 사진 변경 시 승인된 정적 이미지도 갱신합니다. 데이터/사진 검토 → 테스트 → 커밋 → Vercel 재배포 순서입니다.
 
-- 프런트 소스·Vercel 설정·HTTPS 환경 변수 예시·CI 준비.
-- 외부 API 주소 및 서버·DB 환경 미제공: 실제 외부 로그인·데이터·사진 업로드 검증과 Vercel 배포 URL 확인은 미완료.
-- 본 저장소는 호스팅 준비 소스이며 운영 데이터가 포함된 사내망 이전 패키지와 별개입니다.
-- `npm ci` → `npm run typecheck` → `npm test` → `npm run build`로 빌드를 확인합니다.
-
-공식 참고: [Vercel Next.js](https://vercel.com/docs/frameworks/full-stack/nextjs), [Functions 제한](https://vercel.com/docs/functions/limitations), [지원 런타임](https://vercel.com/docs/functions/runtimes).
-
-기술과 운영 페이지의 SBOM·보안 점검은 원본 사내망 릴리스의 기록입니다. 외부 테스트 서버·Vercel의 실제 런타임·OS·설정 검증 결과를 의미하지 않습니다.
+`/technology`의 SBOM·사내망 보안 검증은 원본 운영 릴리스 기록이며 Vercel 플랫폼 자체를 검증한 결과가 아닙니다. 검색엔진 수집 방지 헤더는 접근 통제가 아닙니다.

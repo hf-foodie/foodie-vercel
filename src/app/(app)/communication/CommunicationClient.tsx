@@ -120,10 +120,10 @@ export default function CommunicationClient() {
         </Link>
       </form>
       <div className="kr-actions my-5">
-        <Link className="kr-link" href={url({ mine: mine ? '' : 'true', page: '1' })}>
+        <Link className="kr-link" href="/login">
           {mine ? '전체 글 보기' : '내 글 찾기'}
         </Link>
-        <p className="kr-form-note">전체 게시글에서 검색하며, 내 글과 카테고리 조건을 함께 적용합니다.</p>
+        <p className="kr-form-note">전체 게시글에서 검색합니다. 내 글 찾기는 내부망에 정식 서비스 오픈 후 이용가능</p>
       </div>
       <p className="kr-search-summary">
         검색 결과 {total}건 · {page}/{pages}페이지 · 현재 표시 {loading || error ? 0 : posts.length}건

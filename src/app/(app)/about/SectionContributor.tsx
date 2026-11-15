@@ -1,3 +1,4 @@
+import { customFetch } from '@/lib/fetch'
 import Heading from '@/shared/Heading'
 import Image from 'next/image'
 import { apiBase } from '@/lib/server-session'
@@ -5,7 +6,7 @@ import { apiBase } from '@/lib/server-session'
 const SectionContributor = async () => {
   let nickname = '맛집 제보 기여자'
   try {
-    const response = await fetch(`${apiBase()}/contributors/featured`, { cache: 'no-store', signal: AbortSignal.timeout(5000) })
+    const response = await customFetch(`${apiBase()}/contributors/featured`, { cache: 'no-store', signal: AbortSignal.timeout(5000) })
     if (response.ok) {
       const data = await response.json()
       if (typeof data.nickname === 'string' && data.nickname.trim()) nickname = data.nickname
