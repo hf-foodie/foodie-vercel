@@ -1,5 +1,19 @@
 // Checked 2026-11-15. See docs/four-restaurant-photos-20261115.md.
 export const restaurantPhotos: Record<number, { src: string; alt: string; sourceUrl: string; sourceLabel?: string; square?: boolean }> = {
+  "431": {
+  "src": "/images/restaurant/thumbnail/431-verified-20261115.webp",
+  "alt": "족다귀 동래 매장의 족다귀·불족다귀 구이",
+  "sourceUrl": "https://wghun5416.tistory.com/entry/Busan-Jokdagwi-Review",
+  "sourceLabel": "눈누의 다양한 블로그 방문 후기",
+  "square": true
+},
+  "430": {
+  "src": "/images/restaurant/thumbnail/430-verified-20261115.webp",
+  "alt": "우주강산 전포동 매장의 육갈탕",
+  "sourceUrl": "https://windclub7.tistory.com/16",
+  "sourceLabel": "영맨RE:뷰 방문 후기",
+  "square": true
+},
   "118": {
     "src": "/images/restaurant/thumbnail/118.webp",
     "alt": "사미헌 매장",
