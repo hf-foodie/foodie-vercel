@@ -1,0 +1,9 @@
+declare module "react-use-keypress";
+declare module '@hugeicons/core-free-icons/dist/esm/LicenseIcon';
+declare module '@hugeicons/core-free-icons/dist/esm/ArrowUpIcon';
+declare module '@hugeicons/core-free-icons/dist/esm/Tag02Icon';
+declare module '@hugeicons/core-free-icons/dist/esm/Search01Icon';
+declare module '@hugeicons/core-free-icons/dist/esm/Calendar01Icon';
+declare module '@hugeicons/core-free-icons/dist/esm/Comment01Icon';
+declare module '@hugeicons/core-free-icons/dist/esm/ViewIcon';
+declare module '@hugeicons/core-free-icons/dist/esm/FavouriteIcon';

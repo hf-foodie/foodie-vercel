@@ -1,0 +1,20 @@
+const { test } = require('node:test')
+const assert = require('node:assert/strict')
+const { bookmarkListHref, bookmarkReturnHref, bookmarkedReviewsHref } = require('../src/lib/bookmarkNavigation.ts')
+const { searchQuery, searchListHref } = require('../src/lib/searchNavigation.ts')
+
+test('saved-list context survives related reviews and post detail without mixing page numbers', () => {
+  const list = bookmarkListHref(new URLSearchParams({ q:'국밥 & 카페', region:'부산', category:'한식', sort:'name', page:'2' }))
+  const reviews = new URL(bookmarkedReviewsHref(351, list), 'http://localhost')
+  reviews.searchParams.set('page','3')
+  const detail = new URL('/posts/37' + searchQuery(reviews.searchParams), 'http://localhost')
+  assert.equal(bookmarkReturnHref(detail.searchParams.get('bookmarkReturn')),list)
+  assert.equal(new URL(list,'http://localhost').searchParams.get('page'),'2')
+  assert.equal(new URL(searchListHref(detail.searchParams),'http://localhost').searchParams.get('page'),'3')
+})
+test('return destination accepts only the saved-list route and its known filters', () => {
+  for(const value of ['https://example.com','//example.com','/bookmarks/other','/bookmarks#bad','/bookmarks?x=\\evil','javascript:alert(1)']) assert.equal(bookmarkReturnHref(value),null)
+  assert.equal(bookmarkReturnHref('/bookmarks?unknown=x&page=2&q=hello'),'/bookmarks?q=hello&page=2')
+  assert.equal(bookmarkReturnHref(null),null)
+  assert.equal(searchListHref(new URLSearchParams('s=test&page=2')),'/blogs?s=test&page=2')
+})
