@@ -1,5 +1,12 @@
 const {test}=require('node:test');const assert=require('node:assert/strict');
 const {newBingo,readBingo,toggleMission,bingoLines,missions,missionRestaurants,restaurantRegion}=require('../src/lib/foodBingo.ts');
+const {readBingoView}=require('../src/lib/foodBingo.ts');
+test('bingo URL state validates missions, page numbers and region independently of completion',()=>{
+  assert.deepEqual(readBingoView(new URLSearchParams('mission=region&page=3&region=부산')),{mission:'region',page:2,region:'부산'});
+  for(const page of ['0','-2','NaN','1.5','Infinity','9007199254740992']) assert.equal(readBingoView(new URLSearchParams({page})).page,0);
+  assert.deepEqual(readBingoView(new URLSearchParams('mission=unknown&page=2&region=invalid')),{mission:'first',page:1,region:''});
+  assert.equal(readBingoView(new URLSearchParams()).region,null);
+});
 test('bingo persists a unique nine-cell board and toggles without duplicate completion',()=>{let b=newBingo(()=>.5);assert.equal(new Set(b.order).size,9);b=toggleMission(b,b.order[0]);assert.equal(b.checked.length,1);assert.deepEqual(readBingo(JSON.stringify(b)),b);assert.equal(toggleMission(b,b.order[0]).checked.length,0);assert.equal(bingoLines(b),0)});
 test('rows columns and diagonals count once and cancel reverses achievements',()=>{let b={...newBingo(),order:missions.map(m=>m.id)};for(const i of [0,1,2])b=toggleMission(b,b.order[i]);assert.equal(bingoLines(b),1);b={...b,checked:[...b.order]};assert.equal(bingoLines(b),8);b=toggleMission(b,b.order[4]);assert.equal(bingoLines(b),4)});
 test('invalid storage cannot create fake cells or awards',()=>{for(const s of ['bad','null','{}',JSON.stringify({...newBingo(),checked:['unknown']}),JSON.stringify({...newBingo(),order:Array(9).fill('first')}),JSON.stringify({...newBingo(),version:2})])assert.equal(readBingo(s),null)});

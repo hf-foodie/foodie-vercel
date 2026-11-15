@@ -14,6 +14,16 @@ export type MissionId = typeof missions[number]['id']
 export type BingoState = { version: 1; order: MissionId[]; checked: MissionId[]; region: string }
 export type BingoRestaurant = { restaurantId: number; name: string; address: string; category: string; isSolo: boolean; representativeMenuNames: string[] }
 const ids = missions.map(m => m.id)
+export function readBingoView(params: { get(key: string): string | null }) {
+  const mission = params.get('mission') as MissionId
+  const rawPage = Number(params.get('page'))
+  const rawRegion = params.get('region')
+  return {
+    mission: ids.includes(mission) ? mission : 'first' as MissionId,
+    page: Number.isSafeInteger(rawPage) && rawPage > 0 ? rawPage - 1 : 0,
+    region: rawRegion === null ? null : restaurantRegion(rawRegion),
+  }
+}
 export function newBingo(random = Math.random): BingoState {
   const order = [...ids]
   for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]] }

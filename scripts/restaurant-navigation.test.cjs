@@ -2,6 +2,17 @@ const { test } = require('node:test')
 const assert = require('node:assert/strict')
 const { restaurantListHref, restaurantReturnHref, restaurantReviewsHref } = require('../src/lib/restaurantNavigation.ts')
 const { searchQuery } = require('../src/lib/searchNavigation.ts')
+
+test('bingo mission, candidate page and region survive reviews and post detail', () => {
+  const list = restaurantListHref('/game/bingo', new URLSearchParams('mission=region&page=3&region=부산'))
+  const reviews = new URL(restaurantReviewsHref(44, list), 'http://localhost')
+  reviews.searchParams.set('page', '2')
+  const post = new URL('/posts/58' + searchQuery(reviews.searchParams), 'http://localhost')
+  assert.equal(restaurantReturnHref(post.searchParams.get('restaurantReturn')), list)
+  assert.equal(new URL(list, 'http://localhost').searchParams.get('page'), '3')
+  assert.equal(restaurantReturnHref('/game/bingo?mission=solo&page=2&redirect=https://example.com'), '/game/bingo?page=2&mission=solo')
+  assert.equal(restaurantReturnHref('/game/bingo/other?mission=solo'), null)
+})
 test('chef and all recommendation collections retain their own filters through post detail', () => {
   for (const path of ['/blackwhite','/influencer/ceo','/influencer/vpresident','/influencer/cc','/influencer/intern']) {
     const source=new URLSearchParams('q=서울&page=2&season[]=1&season[]=2&spoonClass[]=흑수저&time-zone[]=lunch&food-style[]=korean-food')
