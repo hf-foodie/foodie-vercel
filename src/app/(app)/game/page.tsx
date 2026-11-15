@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 import ConfirmDialog from '@/components/krds/ConfirmDialog'
 import { Breadcrumb, PageHeading, StatusMessage } from '@/components/krds/PageHeading'
 import dynamic from 'next/dynamic'
@@ -39,7 +40,7 @@ export default function GamePage() {
     <main className="kr-container kr-main kr-game">
       <Breadcrumb current="맛집놀이터" />
       <PageHeading title="맛집놀이터" description="고르기 어려운 오늘의 메뉴, 추첨으로 정해보세요." />
-      <p className="kr-form-note">메뉴와 추첨 결과는 현재 화면에서만 유지됩니다.</p>
+      <section className="kr-panel mb-6"><h2 className="text-xl font-bold">🏆 오늘 점심 월드컵</h2><p className="my-3">8강·16강 메뉴 대결! 우승 메뉴를 파는 등록 식당과 후기를 찾아보세요.</p><Link href="/game/worldcup" className="kr-button kr-button-primary">점심 월드컵 시작하기</Link></section><p className="kr-form-note">메뉴와 추첨 결과는 현재 화면에서만 유지됩니다.</p>
       <div className="kr-game-grid">
         <section className="kr-panel kr-wheel-panel" aria-label="메뉴 추첨">
           <div className="kr-wheel">

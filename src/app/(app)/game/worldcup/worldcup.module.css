@@ -1,0 +1,26 @@
+.main { max-width: 1120px; }
+.setup { display: grid; gap: 18px; max-width: 680px; margin: 0 auto; }
+.setup h2,.result h2 { font-size: clamp(24px,4vw,34px); font-weight: 750; }
+.hero { display: block; font-size: 58px; text-align: center; }
+.size { display: flex; gap: 8px; align-items: center; padding: 14px; border: 1px solid #b1b8be; border-radius: 8px; cursor: pointer; }
+.size input { width: 20px; height: 20px; accent-color: #174bca; }
+.round { display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between; }
+.round h2 {font-size:24px;font-weight:700;}
+.progress { width:100%; height:10px; margin:18px 0 28px; accent-color:#174bca; }
+.match {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+.card {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:280px;padding:24px 12px;border:2px solid #cdd6e7;border-radius:18px;background:#f5f8ff;color:#172b4d;cursor:pointer;transition:background .15s,border-color .15s;}
+.card:hover {background:#eaf0ff;border-color:#174bca;}
+.card:focus-visible {outline:3px solid #174bca;outline-offset:4px;}
+.icon {font-size:80px;line-height:1.2;}
+.card strong {font-size:28px;overflow-wrap:anywhere;}
+.pick {font-weight:700;color:#174bca;}
+.tip {margin:22px 0;color:#536579;}
+.result {text-align:center;margin:10px 0 24px;}
+.results {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0;list-style:none;padding:0;}
+.results li {display:flex;flex-direction:column;gap:10px;border:1px solid #cdd6e7;border-radius:12px;padding:20px;min-width:0;}
+.results h3 {font-size:20px;font-weight:700;}
+.results p {overflow-wrap:anywhere;}
+.results a {margin-top:auto;}
+.menus {color:#536579;font-size:14px;}
+.actions {margin-top:24px;}
+@media(max-width:640px){.match{gap:12px}.card{min-height:230px;gap:14px;padding:20px 6px}.icon{font-size:56px}.card strong{font-size:22px}.card span:not(.icon){font-size:13px}.results{grid-template-columns:1fr}.hero{font-size:44px}.round h2{font-size:21px}}
