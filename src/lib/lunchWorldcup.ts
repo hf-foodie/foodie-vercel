@@ -30,6 +30,19 @@ export const dishes = [
   { id: 'gimbap', name: '김밥', icon: '🍙', pattern: /김밥/ },
 ] as const
 export type Candidate = { id: string; name: string; icon: string; restaurants: MenuRestaurant[] }
+export function readWorldcupView(params: { get(key: string): string | null }) {
+  const winner = params.get('winner'), rawPage = Number(params.get('page'))
+  return {
+    winner: dishes.some(d => d.id === winner) ? winner : null,
+    office: (params.get('office') ?? '').trim().slice(0, 100),
+    size: params.get('size') === '16' ? 16 : 8,
+    page: Number.isSafeInteger(rawPage) && rawPage > 0 ? rawPage - 1 : 0,
+  }
+}
+export function worldcupHref(winner: string | null, office: string, size: number, page = 0) {
+  const query = new URLSearchParams({ ...(winner ? { page: String(page + 1), winner } : {}), ...(office ? { office } : {}), size: String(size) })
+  return '/game/worldcup?' + query.toString()
+}
 export function menuCandidates(restaurants: MenuRestaurant[], office = ''): Candidate[] {
   return dishes.map(dish => ({ ...dish, restaurants: restaurants.filter(r => (!office || r.nearOfficeNames.includes(office)) && r.representativeMenuNames.some(menu => dish.pattern.test(menu.replace(/\s+/g, '')))) })).filter(dish => dish.restaurants.length > 0)
 }
