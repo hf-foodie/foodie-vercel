@@ -23,7 +23,8 @@ export default function LunchWorldcup() {
   const page = Math.min(requestedPage, Math.max(0, Math.ceil(resultRows.length / 6) - 1))
   const listHref = worldcupHref(champion?.id ?? null, office, size, page)
   useEffect(() => {
-    if (cup?.champion && winner !== cup.champion.id) window.history.replaceState(null, '', worldcupHref(cup.champion.id, office, size))
+    // A restored result URL takes precedence over any cached tournament state.
+    if (cup?.champion && !winner) window.history.replaceState(null, '', worldcupHref(cup.champion.id, office, size))
   }, [cup?.champion, office, size, winner])
   useBookmarkScroll(listHref, !!champion, 'worldcup-restaurant-')
   function reset() {
