@@ -17,8 +17,8 @@ export default function LunchWorldcup() {
   const pair = cup?.round.slice(cup.winners.length * 2, cup.winners.length * 2 + 2) ?? []
   const resultRows = champion?.restaurants ?? []
   return <main className={`kr-container kr-main ${styles.main}`}>
-    <Breadcrumb current="오늘 점심 월드컵" parent={{label:'맛집놀이터',href:'/game'}} />
-    <PageHeading title="오늘 점심 월드컵" description="지금 더 먹고 싶은 메뉴를 골라보세요. 우승 메뉴를 파는 등록 식당까지 찾아드려요." />
+    <Breadcrumb current="맛집월드컵" parent={{label:'맛집탐방',href:'/search'}} />
+    <PageHeading title="맛집월드컵" description="지금 더 먹고 싶은 메뉴를 골라보세요. 우승 메뉴를 파는 등록 식당까지 찾아드려요." />
     <p className="kr-form-note">로그인 없이 즐길 수 있어요. 결과는 현재 화면에서만 유지되며 식당의 실제 판매 여부는 방문 전 확인해 주세요.</p>
     {!cup ? <section className={`kr-panel ${styles.setup}`} aria-label="월드컵 설정">
       <div className={styles.hero} aria-hidden="true">🍜 🏆 🍛</div>
@@ -35,7 +35,7 @@ export default function LunchWorldcup() {
       <p className="kr-form-note">등록 정보와 연결된 후기만 표시합니다. 아직 후기가 없는 식당은 후기 목록이 비어 있을 수 있어요.</p>
       <ul className={styles.results}>{resultRows.slice(page*6,page*6+6).map(r=><li key={r.restaurantId}><h3>{r.name}</h3><p>{r.address}</p><p className={styles.menus}>{r.representativeMenuNames.join(' · ')}</p><Link className="kr-button kr-button-primary" href={menuReviewsHref(r.restaurantId)}>{r.name} 후기 찾기</Link></li>)}</ul>
       {resultRows.length>6 && <nav className="kr-actions" aria-label="우승 메뉴 식당 페이지"><button className="kr-button" disabled={page===0} onClick={()=>setPage(p=>p-1)}>이전</button><span aria-live="polite">{page+1} / {Math.ceil(resultRows.length/6)}</span><button className="kr-button" disabled={(page+1)*6>=resultRows.length} onClick={()=>setPage(p=>p+1)}>다음</button></nav>}
-      <div className={`kr-actions ${styles.actions}`}><button className="kr-button" onClick={()=>{setCup(null);setPage(0)}}>다시 도전하기</button><Link href="/game" className="kr-button">맛집놀이터</Link></div>
+      <div className={`kr-actions ${styles.actions}`}><button className="kr-button" onClick={()=>{setCup(null);setPage(0)}}>다시 도전하기</button><Link href="/game/roulette" className="kr-button">오늘의메뉴</Link></div>
     </section> : <section className="kr-panel" aria-label="메뉴 대결">
       <div className={styles.round} aria-live="polite"><h2>{cup.round.length===2?'결승':`${cup.round.length}강`} · {cup.winners.length+1} / {cup.round.length/2}</h2><p>{cup.completed} / {cup.size-1}번 선택 완료</p></div>
       <progress className={styles.progress} aria-label="월드컵 진행률" value={cup.completed} max={cup.size-1}/>

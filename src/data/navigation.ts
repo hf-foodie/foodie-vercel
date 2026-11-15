@@ -4,6 +4,12 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       id: '1',
       href: '/search',
       name: '맛집탐방',
+      type: 'dropdown',
+      children: [
+        { id: 'explore-search', href: '/search', name: '맛집 검색' },
+        { id: 'explore-roulette', href: '/game/roulette', name: '오늘의메뉴' },
+        { id: 'explore-worldcup', href: '/game/worldcup', name: '맛집월드컵' },
+      ],
     },
     { id: 'blogs', href: '/blogs', name: '맛집블로그' },
     {
@@ -100,11 +106,6 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
           name: '식당 정보 수정',
         }
       ],
-    },
-    {
-      id: '4',
-      href: '/game',
-      name: '맛집놀이터',
     },
     {
       id: '5',
