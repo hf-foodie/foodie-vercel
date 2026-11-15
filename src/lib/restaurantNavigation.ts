@@ -1,5 +1,6 @@
 type Query = { get(name: string): string | null; getAll(name: string): string[] }
 const labels = {
+  '/dormitory/gyungdong': '경동파크타워 인근 맛집',
   '/game/bingo': '맛집빙고',
   '/game/worldcup': '맛집월드컵',
   '/search': '맛집탐방', '/blogs': '맛집블로그',

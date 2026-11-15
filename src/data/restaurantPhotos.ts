@@ -1,5 +1,25 @@
 // Checked 2026-11-15. See docs/four-restaurant-photos-20261115.md.
 export const restaurantPhotos: Record<number, { src: string; alt: string; sourceUrl: string; sourceLabel?: string; square?: boolean }> = {
+  "441": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/441-provided-20261116.png","alt":"봉평옹심이메밀칼국수 서면점 옹심이메밀칼국수","sourceUrl":""},
+  "442": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/442-provided-20261116.png","alt":"고향소갈비찜 부산부전점 소갈비찜","sourceUrl":""},
+  "443": {"sourceLabel":"해당 지점 방문자 사진","square":true,"sourceUrl":"https://blog.naver.com/aa777com/224396995498","alt":"부전수구레국밥 매장","src":"/images/restaurant/thumbnail/443-verified-20261115.jpg"},
+  "444": {"sourceLabel":"해당 지점 방문자 사진","square":true,"sourceUrl":"https://www.diningcode.com/profile.php?rid=s2PNsMFp3YyV","alt":"미성왕만두 서면문화로 지점 왕만두","src":"/images/restaurant/thumbnail/444-verified-20261115.webp"},
+  "445": {"sourceLabel":"해당 지점 방문자 사진","square":true,"sourceUrl":"https://www.diningcode.com/profile.php?rid=8MMhdiDowzRL","alt":"경성꽈배기 시민공원서면롯데점 꽈배기와 고로케","src":"/images/restaurant/thumbnail/445-verified-20261115.webp"},
+
+  "436": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/436-provided-20261116.png","alt":"탁사발 두부공방 서면점 두부 요리","sourceUrl":""},
+  "437": {"sourceLabel":"해당 지점 방문자 사진","src":"/images/restaurant/thumbnail/437-verified-20261115.webp","alt":"춘하추동밀면 서면본점 밀면","sourceUrl":"https://www.diningcode.com/profile.php?rid=uhAPJTh0cGlE","square":true},
+  "438": {"sourceLabel":"해당 지점 방문자 사진","src":"/images/restaurant/thumbnail/438-verified-20261115.webp","alt":"밤중에 오징어무침과 소고기육전","sourceUrl":"https://www.diningcode.com/profile.php?rid=KlVWYGOV6XiY","square":true},
+  "439": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/439-provided-20261116.png","alt":"88대패 부산시민공원점 대패삼겹살","sourceUrl":""},
+  "440": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/440-provided-20261116.png","alt":"효탄 초밥과 메밀소바","sourceUrl":""},
+
+  "435": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/435-provided-20261116.png","alt":"남해장어 장어구이","sourceUrl":""},
+  "434": {
+  "src": "/images/restaurant/thumbnail/434-verified-20261115.jpg",
+  "alt": "삼다진족 서면점의 족발·보쌈 메뉴",
+  "sourceUrl": "https://menu.busan.go.kr/shop/info/CD_SHP_000384?langSn=2&tp=si",
+  "sourceLabel": "부산시 부산올랭 서면점 메뉴 사진",
+  "square": true
+},
   "433": {
   "src": "/images/restaurant/thumbnail/433-verified-20261115.webp",
   "alt": "리파인 전포 매장의 음식",

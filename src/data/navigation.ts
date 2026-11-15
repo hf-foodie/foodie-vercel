@@ -24,6 +24,12 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       type: 'mega-menu',
       children: [
         {
+          id: 'dormitory',
+          href: '#',
+          name: '합숙소 인근 맛집',
+          children: [{ id: 'dormitory-gyungdong', href: '/dormitory/gyungdong', name: '경동파크타워' }],
+        },
+        {
           id: '1',
           href: '#',
           name: '맛집모음',
