@@ -4,6 +4,8 @@ import { Metadata } from 'next'
 import ThemeProvider from './theme-provider'
 import { getAllRestaurantList } from '@/services/restaurant'
 import SiteNotice from '@/components/krds/SiteNotice'
+import PreviewWebAnalytics from '@/components/PreviewWebAnalytics'
+import { isAnalyticsEnabled } from '@/lib/webAnalytics'
 
 
 export const metadata: Metadata = {
@@ -28,6 +30,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <div>{children}</div>
           <SiteNotice />
         </ThemeProvider>
+        {isAnalyticsEnabled(process.env.VERCEL_ENV) && <PreviewWebAnalytics />}
       </body>
     </html>
   )

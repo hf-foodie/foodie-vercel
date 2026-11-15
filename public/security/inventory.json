@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-15T08:53:21.417Z",
-  "packageLockSha256": "a9bfbc1d5d063a6fa40235674ce393e60a4c7a1ad6d7ede723d07d740eaeff1f",
+  "generatedAt": "2026-11-15T10:55:47.941Z",
+  "packageLockSha256": "5c0084df1a171b1dba453ac54d525404e811263499c14ed539734f8669e8da4f",
   "serverJarSha256": "eddd75e67c8a4df8e2b9973587329778a944fba06c819dfe9d4997abeb76a92a",
-  "sbomSha256": "1db36957fe9712349af1dbf4021669971d2b054e2945055cd1d0aaa0bf805bee",
+  "sbomSha256": "13c23b72ba8602451c9031c1d58ad0e1b2f3f56fd2bc15153eaa51e363ad9a9c",
   "npm": {
-    "checkedAt": "2026-11-15T07:52:44.255Z",
+    "checkedAt": "2026-11-15T10:55:47.727Z",
     "vulnerabilities": {
       "info": 0,
       "low": 0,
@@ -3059,6 +3059,14 @@
       "ecosystem": "npm",
       "usage": "개발·빌드",
       "purl": "pkg:npm/%40unrs/resolver-binding-win32-x64-msvc@1.13.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@vercel/analytics",
+      "version": "2.0.1",
+      "ecosystem": "npm",
+      "usage": "앱 의존성 (잠금 파일)",
+      "purl": "pkg:npm/%40vercel/analytics@2.0.1",
       "license": "MIT"
     },
     {

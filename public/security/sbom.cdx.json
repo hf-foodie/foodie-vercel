@@ -2,9 +2,9 @@
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
   "version": 1,
-  "serialNumber": "urn:uuid:6d3f6889-bfeb-45a3-8e7b-6676b5a01c96",
+  "serialNumber": "urn:uuid:4d5befc8-1a4f-4780-920b-52c2708c7e23",
   "metadata": {
-    "timestamp": "2026-11-15T08:53:21.417Z",
+    "timestamp": "2026-11-15T10:55:47.941Z",
     "component": {
       "type": "application",
       "name": "오늘뭐먹지",
@@ -13,7 +13,7 @@
     "properties": [
       {
         "name": "foodie:package-lock-sha256",
-        "value": "a9bfbc1d5d063a6fa40235674ce393e60a4c7a1ad6d7ede723d07d740eaeff1f"
+        "value": "5c0084df1a171b1dba453ac54d525404e811263499c14ed539734f8669e8da4f"
       },
       {
         "name": "foodie:server-jar-sha256",
@@ -7457,6 +7457,36 @@
         {
           "alg": "SHA-512",
           "content": "0e92cc940aa5ae4e330552b70e20e3c0a0f4a2aee964dcbef01888051b81caa6fa766e63b1da0b321222ca1ff147bf967a3696ff5522f9781b80c35ae3ecd626"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "npm:node_modules/@vercel/analytics",
+      "name": "@vercel/analytics",
+      "version": "2.0.1",
+      "purl": "pkg:npm/%40vercel/analytics@2.0.1",
+      "properties": [
+        {
+          "name": "foodie:scope",
+          "value": "앱 의존성 (잠금 파일)"
+        },
+        {
+          "name": "foodie:lock-location",
+          "value": "node_modules/@vercel/analytics"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "name": "MIT"
+          }
+        }
+      ],
+      "hashes": [
+        {
+          "alg": "SHA-512",
+          "content": "313406e95f6a42bb75b6c0de17ed94a28e5a3e3a9b54fcacd71be721fb57489606d92af05d11e7a84bd5a18203ec14ebb83cf894277667baccd4176451e864da"
         }
       ]
     },
