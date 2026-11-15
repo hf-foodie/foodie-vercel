@@ -5,6 +5,7 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       href: '/search',
       name: '맛집탐방',
     },
+    { id: 'blogs', href: '/blogs', name: '맛집블로그' },
     {
       id: 'games',
       href: '/game',
@@ -15,7 +16,6 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
         { id: 'explore-worldcup', href: '/game/worldcup', name: '맛집월드컵' },
       ],
     },
-    { id: 'blogs', href: '/blogs', name: '맛집블로그' },
     {
       id: '2',
       href: '/',
