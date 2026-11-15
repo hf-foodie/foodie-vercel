@@ -17,7 +17,7 @@ export default function LunchWorldcup() {
   const pair = cup?.round.slice(cup.winners.length * 2, cup.winners.length * 2 + 2) ?? []
   const resultRows = champion?.restaurants ?? []
   return <main className={`kr-container kr-main ${styles.main}`}>
-    <Breadcrumb current="맛집월드컵" parent={{label:'맛집탐방',href:'/search'}} />
+    <Breadcrumb current="맛집월드컵" parent={{label:'맛집게임',href:'/game'}} />
     <PageHeading title="맛집월드컵" description="지금 더 먹고 싶은 메뉴를 골라보세요. 우승 메뉴를 파는 등록 식당까지 찾아드려요." />
     <p className="kr-form-note">로그인 없이 즐길 수 있어요. 결과는 현재 화면에서만 유지되며 식당의 실제 판매 여부는 방문 전 확인해 주세요.</p>
     {!cup ? <section className={`kr-panel ${styles.setup}`} aria-label="월드컵 설정">

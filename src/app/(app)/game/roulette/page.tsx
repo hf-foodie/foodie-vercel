@@ -37,7 +37,7 @@ export default function GamePage() {
   }
   return (
     <main className="kr-container kr-main kr-game">
-      <Breadcrumb current="오늘의메뉴" parent={{ label: '맛집탐방', href: '/search' }} />
+      <Breadcrumb current="오늘의메뉴" parent={{ label: '맛집게임', href: '/game' }} />
       <PageHeading title="오늘의메뉴" description="고르기 어려운 오늘의 메뉴, 추첨으로 정해보세요." />
       <p className="kr-form-note">메뉴와 추첨 결과는 현재 화면에서만 유지됩니다.</p>
       <div className="kr-game-grid">

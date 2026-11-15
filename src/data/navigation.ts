@@ -4,9 +4,13 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       id: '1',
       href: '/search',
       name: '맛집탐방',
+    },
+    {
+      id: 'games',
+      href: '/game',
+      name: '맛집게임',
       type: 'dropdown',
       children: [
-        { id: 'explore-search', href: '/search', name: '맛집 검색' },
         { id: 'explore-roulette', href: '/game/roulette', name: '오늘의메뉴' },
         { id: 'explore-worldcup', href: '/game/worldcup', name: '맛집월드컵' },
       ],

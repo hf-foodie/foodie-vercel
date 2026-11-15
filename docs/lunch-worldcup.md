@@ -1,6 +1,6 @@
 # 오늘 점심 월드컵
 
-맛집탐방 > 맛집월드컵에서 /game/worldcup으로 이동합니다. 기존 룰렛은 맛집탐방 > 오늘의메뉴(/game/roulette)로 분리했습니다. 기존 /game 주소는 /game/roulette로 이동합니다. 로그인 없이 사내망과 Vercel 체험판에서 사용할 수 있습니다.
+맛집게임 > 맛집월드컵에서 /game/worldcup으로 이동합니다. 기존 룰렛은 맛집게임 > 오늘의메뉴(/game/roulette)로 분리했습니다. 기존 /game 주소는 /game/roulette로 이동합니다. 로그인 없이 사내망과 Vercel 체험판에서 사용할 수 있습니다.
 
 ## 이용 방법과 규칙
 
