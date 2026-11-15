@@ -131,10 +131,10 @@ const SearchModal: FC = () => {
                 }
 
                   if ('name' in item && item.name === "태그검색") {
-                      router.push(`/blogs?tab=tags`)
+                      router.push(`/records?tab=tags`)
                   } else if ('name' in item && item.name === "통합검색") {
                       recordSearch(query,'header')
-                      router.push(`/blogs?s=${encodeURIComponent(query)}`)
+                      router.push(`/records?s=${encodeURIComponent(query)}`)
                   } else {
                       router.push(`/posts/${item.postId}`)
                   }
@@ -178,7 +178,7 @@ const SearchModal: FC = () => {
               >
                 {query !== '' && (
                   <li className="p-2">
-                    <Link className="block p-3 text-sm underline" href={`/blogs?s=${encodeURIComponent(query)}`} onClick={() => setOpen(false)}>전체 검색 결과 보기</Link>
+                    <Link className="block p-3 text-sm underline" href={`/records?s=${encodeURIComponent(query)}`} onClick={() => setOpen(false)}>전체 검색 결과 보기</Link>
                     <ul className="divide-y divide-gray-100 text-sm text-gray-700 dark:divide-gray-700 dark:text-gray-300">
                       {posts.length ? (
                         posts.map((post) => (

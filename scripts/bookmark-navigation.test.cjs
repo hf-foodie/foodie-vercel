@@ -16,5 +16,5 @@ test('return destination accepts only the saved-list route and its known filters
   for(const value of ['https://example.com','//example.com','/bookmarks/other','/bookmarks#bad','/bookmarks?x=\\evil','javascript:alert(1)']) assert.equal(bookmarkReturnHref(value),null)
   assert.equal(bookmarkReturnHref('/bookmarks?unknown=x&page=2&q=hello'),'/bookmarks?q=hello&page=2')
   assert.equal(bookmarkReturnHref(null),null)
-  assert.equal(searchListHref(new URLSearchParams('s=test&page=2')),'/blogs?s=test&page=2')
+  assert.equal(searchListHref(new URLSearchParams('s=test&page=2')),'/records?s=test&page=2')
 })

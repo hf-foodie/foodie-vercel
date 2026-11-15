@@ -22,6 +22,7 @@ export function useSearchScroll(list: string, ready: boolean) {
       raw = sessionStorage.getItem(storageKey)
       if (!raw) return
       position = JSON.parse(raw)
+      position.list = position.list.replace(/^\/blogs(?=[?#]|$)/, '/records')
       if (
         position.list !== list ||
         !Number.isSafeInteger(position.postId) ||

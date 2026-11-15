@@ -14,5 +14,5 @@ export function bookmarkReturnHref(value: string | null | undefined) {
 }
 
 export function bookmarkedReviewsHref(restaurantId: number, list: string) {
-  return '/blogs?' + new URLSearchParams({ restaurantId: String(restaurantId), bookmarkReturn: list })
+  return '/records?' + new URLSearchParams({ restaurantId: String(restaurantId), bookmarkReturn: list })
 }

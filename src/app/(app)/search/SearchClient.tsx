@@ -125,7 +125,7 @@ const SearchClient: FC<SearchClientProps> = ({
         return (
           <div className="mt-12 flex flex-wrap gap-3">
             {filteredTags?.map((tag, index) => (
-              <Tag key={index} href={`/blogs?tag=${encodeURIComponent(tag)}&tab=posts`}>
+              <Tag key={index} href={`/records?tag=${encodeURIComponent(tag)}&tab=posts`}>
                 {tag}
               </Tag>
             ))}
@@ -150,10 +150,10 @@ const SearchClient: FC<SearchClientProps> = ({
 
   return (
     <main className="kr-container kr-main">
-      <Breadcrumb current={view === 'blogs' ? '맛집블로그' : '맛집탐방'} />
+      <Breadcrumb current={view === 'blogs' ? '맛집 후기' : '맛집탐방'} />
       {bookmarkHref && <Link href={bookmarkHref} className="kr-link mb-4 inline-flex">← 저장한 맛집으로 돌아가기</Link>}
       {!bookmarkHref && restaurantHref && <Link href={restaurantHref} className="kr-link mb-4 inline-flex">← {restaurantListLabel(restaurantHref)} 목록으로 돌아가기</Link>}
-      <PageHeading title={view === 'blogs' ? '맛집블로그' : '맛집탐방'} description={view === 'blogs' ? '동료들의 맛집 후기를 읽고 태그별로 찾아보세요.' : '등록된 식당을 상호·대표 메뉴·지역으로 찾아보세요.'} />
+      <PageHeading title={view === 'blogs' ? '맛집 후기' : '맛집탐방'} description={view === 'blogs' ? '동료들의 맛집 후기를 읽고 태그별로 찾아보세요.' : '등록된 식당을 상호·대표 메뉴·지역으로 찾아보세요.'} />
       <div className="kr-search-mode-tabs" role="tablist" aria-label="검색 방식">
         {([['search', '검색'], ['filters', '필터']] as const).map(([mode, label], index) => (
           <button key={mode} id={`search-mode-${mode}`} type="button" role="tab"

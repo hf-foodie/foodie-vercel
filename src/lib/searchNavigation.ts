@@ -7,5 +7,5 @@ export function searchQuery(params: { get(name: string): string | null }) {
   return query.size ? '?' + query.toString() : ''
 }
 export function searchListHref(params: { get(name: string): string | null }) {
-  return '/blogs' + searchQuery(params)
+  return '/records' + searchQuery(params)
 }

@@ -25,7 +25,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="bg-white text-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-200">
         <ThemeProvider initialRestaurants={initialRestaurants}>
           <div className="border-b border-amber-300 bg-amber-50 px-4 py-3 text-center text-sm text-neutral-900">
-            인터넷 체험 버전 · 등록된 자료를 조회할 수 있습니다. 회원가입·댓글 등은 내부망에 정식 서비스 오픈 후 이용가능. 기술과 운영의 사내망 검증 기록은 이 체험 환경의 검증 결과가 아닙니다.
+            인터넷 체험 버전 · 등록된 자료를 조회할 수 있습니다. 회원가입·댓글 등은 내부망에 정식 서비스 오픈 후 이용가능.
           </div>
           <div>{children}</div>
           <SiteNotice />

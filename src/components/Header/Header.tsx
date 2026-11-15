@@ -53,7 +53,7 @@ export default function Header({ className }: { bottomBorder?: boolean; classNam
             <AvatarDropdown />
           </div>
           <Link href="/post/new" className="kr-button kr-header-write">
-            맛집 등록
+            후기 등록
           </Link>
           <button
             className="kr-button kr-mobile-trigger"
@@ -107,7 +107,7 @@ export default function Header({ className }: { bottomBorder?: boolean; classNam
               </div>
             </details>
           ) : (
-            <Link key={item.id} href={item.href || '/'} aria-current={pathname === item.href ? 'page' : undefined}>
+            <Link className={item.id === 'register-restaurant' ? 'kr-nav-register-start' : undefined} key={item.id} href={item.href || '/'} aria-current={pathname === item.href ? 'page' : undefined}>
               {item.name}
             </Link>
           )

@@ -1,5 +1,8 @@
 // Checked 2026-11-15. See docs/four-restaurant-photos-20261115.md.
 export const restaurantPhotos: Record<number, { src: string; alt: string; sourceUrl: string; sourceLabel?: string; square?: boolean }> = {
+
+  "446": {"sourceLabel":"사용자 제공 지점 사진","square":true,"sourceUrl":"","alt":"윤우재 문현샤브 칼국수 음식","src":"/images/restaurant/thumbnail/446-provided-20261116.png"},
+  "447": {"sourceLabel":"사용자 제공 지점 사진","square":true,"sourceUrl":"","alt":"부산에뜬고등어 문현점 음식","src":"/images/restaurant/thumbnail/447-provided-20261116.png"},
   "441": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/441-provided-20261116.png","alt":"봉평옹심이메밀칼국수 서면점 옹심이메밀칼국수","sourceUrl":""},
   "442": {"sourceLabel":"사용자 제공 사진","square":true,"src":"/images/restaurant/thumbnail/442-provided-20261116.png","alt":"고향소갈비찜 부산부전점 소갈비찜","sourceUrl":""},
   "443": {"sourceLabel":"해당 지점 방문자 사진","square":true,"sourceUrl":"https://blog.naver.com/aa777com/224396995498","alt":"부전수구레국밥 매장","src":"/images/restaurant/thumbnail/443-verified-20261115.jpg"},

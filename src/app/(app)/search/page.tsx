@@ -10,7 +10,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
   if (query.restaurantId || query.restaurantReturn || query.bookmarkReturn || query.tab || query['sort-by'] || query.tag || query.c === 'author') {
     const legacy = new URLSearchParams()
     Object.entries(query).forEach(([key, value]) => { if (typeof value === 'string') legacy.set(key, value) })
-    redirect('/blogs?' + legacy)
+    redirect('/records?' + legacy)
   }
   const searchQuery = (Array.isArray(query.s) ? query.s[0] : query.s) || ''
   const filters = Object.fromEntries(['region', 'address', 'restaurantName'].map(key => [key, typeof query[key] === 'string' ? query[key] : '']))

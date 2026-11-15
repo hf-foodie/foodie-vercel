@@ -66,5 +66,5 @@ export function chooseMenu(cup: Cup, id: string, expectedMatch: string): Cup {
   return { ...cup, completed, winners }
 }
 export function menuReviewsHref(restaurantId: number) {
-  return '/blogs?' + new URLSearchParams({ restaurantId: String(restaurantId) })
+  return '/records?' + new URLSearchParams({ restaurantId: String(restaurantId) })
 }

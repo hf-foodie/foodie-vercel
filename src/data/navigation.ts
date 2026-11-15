@@ -5,7 +5,7 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       href: '/search',
       name: '맛집탐방',
     },
-    { id: 'blogs', href: '/blogs', name: '맛집블로그' },
+    { id: 'records', href: '/records', name: '맛집 후기' },
     {
       id: 'games',
       href: '/game',
@@ -87,6 +87,9 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       type: 'dropdown',
       children: [
         {
+          id: 'content-moderation', href: '/restaurant/moderation', name: '식당 삭제 · 후기 숨김',
+        },
+        {
           id: 'management-home',
           href: '/management',
           name: '관리 홈',
@@ -99,7 +102,7 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
         {
           id: '1',
           href: '/post/new',
-          name: '맛집등록',
+          name: '후기 등록',
         },
         {
           id: 'recommendations',
@@ -147,6 +150,7 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       ],
     },
   ]
+  items.push({ id: 'register-restaurant', href: '/restaurant/new', name: '맛집 등록' }, { id: 'register-review', href: '/post/new', name: '후기 등록' })
   const normalized = role?.replace(/^ROLE_/, '')
   return items.filter(item => item.id !== '3' || normalized === 'ADMIN' || normalized === 'MANAGER').map(item => item.id === '3' ? {...item,children:item.children?.filter(child=>child.id !== 'admin-analytics' || normalized === 'ADMIN')} : item)
 }

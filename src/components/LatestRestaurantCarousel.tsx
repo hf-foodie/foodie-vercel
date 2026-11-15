@@ -82,7 +82,7 @@ export default function LatestRestaurantCarousel({ restaurants }: { restaurants:
           <div className="kr-muted kr-latest-banner-address"><BannerFullText label="주소" text={restaurant.address} /></div>
           <div className="kr-latest-banner-menu"><BannerFullText label="대표 메뉴" lines={1} text={"대표 메뉴 · " + (restaurant.representativeMenuNames?.join(", ") || "등록된 메뉴가 없습니다.")} /></div>
           <div className="kr-latest-banner-credit"><RestaurantPhotoCredit restaurantId={restaurant.restaurantId} /></div>
-          <div className="kr-latest-banner-actions"><Link className="kr-link" href={'/blogs?restaurantId=' + restaurant.restaurantId}>맛집 후기 찾기 →</Link><BookmarkBtn restaurantId={restaurant.restaurantId} /></div>
+          <div className="kr-latest-banner-actions"><Link className="kr-link" href={'/records?restaurantId=' + restaurant.restaurantId}>맛집 후기 찾기 →</Link><BookmarkBtn restaurantId={restaurant.restaurantId} /></div>
         </article>)}
         </div>)}
       </div>
