@@ -35,3 +35,7 @@ DB 없는 조회, 쓰기 API 차단, 민감 필드 제외, 검색·페이지 이
 공개 범위를 다시 검토한 뒤 운영 준비 PC에서 `PREVIEW_SOURCE_URL`을 설정하고 `node scripts/export-preview.cjs`를 실행합니다. 실제 사내망 DB나 인증 비밀값을 커밋하지 않습니다. 사진 변경 시 승인된 정적 이미지도 갱신합니다. 데이터/사진 검토 → 테스트 → 커밋 → Vercel 재배포 순서입니다.
 
 `/technology`의 SBOM·사내망 보안 검증은 원본 운영 릴리스 기록이며 Vercel 플랫폼 자체를 검증한 결과가 아닙니다. 검색엔진 수집 방지 헤더는 접근 통제가 아닙니다.
+
+## Vercel 요금제와 업로드 방식
+
+hf-foodie는 GitHub 조직 소유 저장소입니다. Vercel 공식 제한상 Hobby 팀은 조직 저장소를 직접 연결할 수 없으므로, 해당 조직 저장소 연결을 지원하는 팀/요금제를 사용해야 합니다. 무료로 배포된다고 보장하지 않습니다. 현재 자료의 용량을 고려해 CLI 업로드 대신 위의 GitHub Import 방식을 사용하세요. [공식 제한](https://vercel.com/docs/limits#connecting-a-project-to-a-git-repository)
