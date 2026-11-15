@@ -1,6 +1,46 @@
 {
-  "snapshotAt": "2026-11-15T09:23:15.954Z",
+  "snapshotAt": "2026-11-15T12:35:41.0420839Z",
   "restaurants": [
+    {
+      "restaurantId": 431,
+      "name": "족다귀",
+      "address": "부산 동래구 명륜로129번다길 16 1층 족다귀",
+      "phoneNumber": "0507-1412-0746",
+      "category": "한식",
+      "isLunch": false,
+      "isDinner": true,
+      "isSolo": false,
+      "isGroup4": true,
+      "isGroup8": false,
+      "representativeMenuNames": [
+        "냉국수",
+        "꼬막비빔국수",
+        "족다귀 구이"
+      ],
+      "nearOfficeNames": [],
+      "createdAt": "2026-11-15T12:34:27.048092Z",
+      "updatedAt": "2026-11-15T12:34:27.048092Z"
+    },
+    {
+      "restaurantId": 430,
+      "name": "우주강산",
+      "address": "부산 부산진구 동성로15번길 24 1층",
+      "phoneNumber": "0507-1363-1386",
+      "category": "한식",
+      "isLunch": true,
+      "isDinner": true,
+      "isSolo": true,
+      "isGroup4": true,
+      "isGroup8": false,
+      "representativeMenuNames": [
+        "육갈탕",
+        "육개장",
+        "육칼국수"
+      ],
+      "nearOfficeNames": [],
+      "createdAt": "2026-11-15T12:34:27.048092Z",
+      "updatedAt": "2026-11-15T12:34:27.048092Z"
+    },
     {
       "restaurantId": 429,
       "name": "한약방돼지국밥 형제식품",
@@ -56,8 +96,8 @@
       "isGroup8": false,
       "representativeMenuNames": [
         "아구찜",
-        "해물찜",
-        "순살아구찜"
+        "순살아구찜",
+        "해물찜"
       ],
       "nearOfficeNames": [
         "본사"
@@ -77,10 +117,10 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "보쌈",
+        "생굴보쌈",
         "막국수",
         "해물칼국수",
-        "생굴보쌈"
+        "보쌈"
       ],
       "nearOfficeNames": [
         "본사"
@@ -122,9 +162,9 @@
       "isGroup4": false,
       "isGroup8": false,
       "representativeMenuNames": [
+        "니꾸 카케우동",
         "토리텐 붓카케우동",
-        "덴뿌라 붓카케우동",
-        "니꾸 카케우동"
+        "덴뿌라 붓카케우동"
       ],
       "nearOfficeNames": [
         "본사"
@@ -1093,8 +1133,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "두바이쫀득쿠기",
-        "딸기 생크림케이크"
+        "딸기 생크림케이크",
+        "두바이쫀득쿠기"
       ],
       "nearOfficeNames": [
         "인천지사",
@@ -1136,8 +1176,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "참치김밥",
-        "소고기김밥"
+        "소고기김밥",
+        "참치김밥"
       ],
       "nearOfficeNames": [
         "인천남부지사"
@@ -1203,8 +1243,8 @@
         "인천지사",
         "인천남부지사"
       ],
-      "createdAt": "2026-01-20T10:34:28.203620Z",
-      "updatedAt": "2026-01-20T10:34:28.203620Z"
+      "createdAt": "2026-01-20T10:34:28.20362Z",
+      "updatedAt": "2026-01-20T10:34:28.20362Z"
     },
     {
       "restaurantId": 354,
@@ -1218,8 +1258,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "동파육",
-        "우육탕면"
+        "우육탕면",
+        "동파육"
       ],
       "nearOfficeNames": [
         "인천지사",
@@ -1261,8 +1301,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "양배추셀러드",
         "에그포테이토피자",
+        "양배추셀러드",
         "프리윌피자"
       ],
       "nearOfficeNames": [
@@ -1284,8 +1324,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "고등어한상",
-        "연어구이한상"
+        "연어구이한상",
+        "고등어한상"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -1313,8 +1353,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-20T10:13:00.561680Z",
-      "updatedAt": "2026-01-20T10:13:00.561680Z"
+      "createdAt": "2026-01-20T10:13:00.56168Z",
+      "updatedAt": "2026-01-20T10:13:00.56168Z"
     },
     {
       "restaurantId": 349,
@@ -1334,8 +1374,8 @@
       "nearOfficeNames": [
         "진주사무소"
       ],
-      "createdAt": "2026-01-20T09:56:52.107240Z",
-      "updatedAt": "2026-01-20T09:56:52.107240Z"
+      "createdAt": "2026-01-20T09:56:52.10724Z",
+      "updatedAt": "2026-01-20T09:56:52.10724Z"
     },
     {
       "restaurantId": 348,
@@ -1371,8 +1411,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "가자미 조림",
-        "가자미 구이"
+        "가자미 구이",
+        "가자미 조림"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -1392,8 +1432,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "중화비빔밥",
-        "형제짬뽕"
+        "형제짬뽕",
+        "중화비빔밥"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -1413,8 +1453,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "산곰장어",
-        "장어구이"
+        "장어구이",
+        "산곰장어"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -1434,8 +1474,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "명품감포물회",
-        "대게코스"
+        "대게코스",
+        "명품감포물회"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -1455,8 +1495,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "연탄불고기백반",
-        "안창국밥"
+        "안창국밥",
+        "연탄불고기백반"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -1482,8 +1522,8 @@
       "nearOfficeNames": [
         "HF미래인재원"
       ],
-      "createdAt": "2026-01-20T09:13:15.031460Z",
-      "updatedAt": "2026-01-20T09:13:15.031460Z"
+      "createdAt": "2026-01-20T09:13:15.03146Z",
+      "updatedAt": "2026-01-20T09:13:15.03146Z"
     },
     {
       "restaurantId": 341,
@@ -1497,8 +1537,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "바나나푸딩",
-        "슬로우커피"
+        "슬로우커피",
+        "바나나푸딩"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -1563,8 +1603,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "쭈꾸미볶음",
-        "감자채전"
+        "감자채전",
+        "쭈꾸미볶음"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -1707,8 +1747,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "안심카츠정식",
-        "경양식돈까스정식"
+        "경양식돈까스정식",
+        "안심카츠정식"
       ],
       "nearOfficeNames": [
         "경기북부지사"
@@ -1793,8 +1833,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "일품칼국수",
-        "설렁탕"
+        "설렁탕",
+        "일품칼국수"
       ],
       "nearOfficeNames": [
         "서울동부지사"
@@ -1814,8 +1854,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "오징어 먹통",
-        "오징어회"
+        "오징어회",
+        "오징어 먹통"
       ],
       "nearOfficeNames": [],
       "createdAt": "2026-01-18T04:43:45.870141Z",
@@ -1876,15 +1916,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "로스카츠",
-        "히레카츠"
+        "히레카츠",
+        "로스카츠"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:50.591750Z",
-      "updatedAt": "2026-01-17T00:35:50.591750Z"
+      "createdAt": "2026-01-17T00:35:50.59175Z",
+      "updatedAt": "2026-01-17T00:35:50.59175Z"
     },
     {
       "restaurantId": 287,
@@ -1898,8 +1938,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "바스크치즈케이크",
-        "플랫화이트"
+        "플랫화이트",
+        "바스크치즈케이크"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -1920,8 +1960,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "돼지양념구이",
-        "흑돼지오겹살"
+        "흑돼지오겹살",
+        "돼지양념구이"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -1964,15 +2004,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "국밥",
-        "수육"
+        "수육",
+        "국밥"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:50.500360Z",
-      "updatedAt": "2026-01-17T00:35:50.500360Z"
+      "createdAt": "2026-01-17T00:35:50.50036Z",
+      "updatedAt": "2026-01-17T00:35:50.50036Z"
     },
     {
       "restaurantId": 283,
@@ -1986,8 +2026,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "두루치기",
-        "정식"
+        "정식",
+        "두루치기"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2030,8 +2070,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "된장전골",
-        "수육전골"
+        "수육전골",
+        "된장전골"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2052,8 +2092,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한치물회",
-        "잡어물회"
+        "잡어물회",
+        "한치물회"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2074,8 +2114,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "추천초밥",
-        "연어초밥"
+        "연어초밥",
+        "추천초밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2162,8 +2202,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "꼬막정찬",
-        "꼬막비빔밥"
+        "꼬막비빔밥",
+        "꼬막정찬"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2184,8 +2224,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "쌀국수",
-        "나시고랭"
+        "나시고랭",
+        "쌀국수"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2228,8 +2268,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "함흥냉면",
-        "밀면"
+        "밀면",
+        "함흥냉면"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2250,8 +2290,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "정식",
-        "청국장"
+        "청국장",
+        "정식"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2272,8 +2312,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "김치찌개",
-        "뒷고기"
+        "뒷고기",
+        "김치찌개"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2294,15 +2334,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "소고기쌀국수",
-        "분짜"
+        "분짜",
+        "소고기쌀국수"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:50.348880Z",
-      "updatedAt": "2026-01-17T00:35:50.348880Z"
+      "createdAt": "2026-01-17T00:35:50.34888Z",
+      "updatedAt": "2026-01-17T00:35:50.34888Z"
     },
     {
       "restaurantId": 265,
@@ -2316,8 +2356,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "불고기백반",
-        "김치찌개"
+        "김치찌개",
+        "불고기백반"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2338,8 +2378,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "들기름메밀면",
-        "비빔메밀면"
+        "비빔메밀면",
+        "들기름메밀면"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2360,8 +2400,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "수제치킨 가라아게",
-        "고노와다 사시미"
+        "고노와다 사시미",
+        "수제치킨 가라아게"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2425,8 +2465,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "닭가슴살샐러드",
-        "연어포케"
+        "연어포케",
+        "닭가슴살샐러드"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2447,8 +2487,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "짬뽕",
-        "군만두"
+        "군만두",
+        "짬뽕"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2469,8 +2509,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한우치마살",
-        "양념갈비"
+        "양념갈비",
+        "한우치마살"
       ],
       "nearOfficeNames": [
         "HF미래인재원"
@@ -2555,8 +2595,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "파스타",
-        "대패김치필라프"
+        "대패김치필라프",
+        "파스타"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2577,15 +2617,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "감자탕",
-        "뼈해장국"
+        "뼈해장국",
+        "감자탕"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:50.098870Z",
-      "updatedAt": "2026-01-17T00:35:50.098870Z"
+      "createdAt": "2026-01-17T00:35:50.09887Z",
+      "updatedAt": "2026-01-17T00:35:50.09887Z"
     },
     {
       "restaurantId": 252,
@@ -2606,8 +2646,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:50.092870Z",
-      "updatedAt": "2026-01-17T00:35:50.092870Z"
+      "createdAt": "2026-01-17T00:35:50.09287Z",
+      "updatedAt": "2026-01-17T00:35:50.09287Z"
     },
     {
       "restaurantId": 251,
@@ -2621,8 +2661,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "분짜",
-        "소고기쌀국수"
+        "소고기쌀국수",
+        "분짜"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2643,15 +2683,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "탕수육",
-        "쟁반짜장"
+        "쟁반짜장",
+        "탕수육"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:50.024390Z",
-      "updatedAt": "2026-01-17T00:35:50.024390Z"
+      "createdAt": "2026-01-17T00:35:50.02439Z",
+      "updatedAt": "2026-01-17T00:35:50.02439Z"
     },
     {
       "restaurantId": 249,
@@ -2687,8 +2727,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "짬뽕",
-        "탕수육"
+        "탕수육",
+        "짬뽕"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2710,8 +2750,8 @@
       "isGroup8": false,
       "representativeMenuNames": [
         "샤브칼국수",
-        "묵은지 샤브칼국수",
-        "보양흑마늘"
+        "보양흑마늘",
+        "묵은지 샤브칼국수"
       ],
       "nearOfficeNames": [
         "서울서부지사"
@@ -2731,8 +2771,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "김치찌개",
-        "숙성삼겹살"
+        "숙성삼겹살",
+        "김치찌개"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2775,8 +2815,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "육회비빔밥",
-        "고기곰탕"
+        "고기곰탕",
+        "육회비빔밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2819,15 +2859,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "불꽃국밥",
-        "돼지국밥"
+        "돼지국밥",
+        "불꽃국밥"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.825740Z",
-      "updatedAt": "2026-01-17T00:35:49.825740Z"
+      "createdAt": "2026-01-17T00:35:49.82574Z",
+      "updatedAt": "2026-01-17T00:35:49.82574Z"
     },
     {
       "restaurantId": 240,
@@ -2848,8 +2888,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.821750Z",
-      "updatedAt": "2026-01-17T00:35:49.821750Z"
+      "createdAt": "2026-01-17T00:35:49.82175Z",
+      "updatedAt": "2026-01-17T00:35:49.82175Z"
     },
     {
       "restaurantId": 239,
@@ -2863,8 +2903,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "수육백반",
-        "돼지국밥"
+        "돼지국밥",
+        "수육백반"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2892,8 +2932,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.811740Z",
-      "updatedAt": "2026-01-17T00:35:49.811740Z"
+      "createdAt": "2026-01-17T00:35:49.81174Z",
+      "updatedAt": "2026-01-17T00:35:49.81174Z"
     },
     {
       "restaurantId": 237,
@@ -2907,8 +2947,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "츠케멘",
-        "미소라멘"
+        "미소라멘",
+        "츠케멘"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -2973,8 +3013,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한우등심",
-        "생삼겹살"
+        "생삼겹살",
+        "한우등심"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3017,8 +3057,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "탕수육",
-        "짜장면"
+        "짜장면",
+        "탕수육"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3039,15 +3079,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "수육",
-        "돼지국밥"
+        "돼지국밥",
+        "수육"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.754220Z",
-      "updatedAt": "2026-01-17T00:35:49.754220Z"
+      "createdAt": "2026-01-17T00:35:49.75422Z",
+      "updatedAt": "2026-01-17T00:35:49.75422Z"
     },
     {
       "restaurantId": 230,
@@ -3127,8 +3167,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "물밀면",
-        "비빔밀면"
+        "비빔밀면",
+        "물밀면"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3149,8 +3189,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "카이센동",
         "모듬숙성사시미",
+        "카이센동",
         "연어후토마끼"
       ],
       "nearOfficeNames": [
@@ -3215,8 +3255,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "비빔칼국수",
-        "손칼국수"
+        "손칼국수",
+        "비빔칼국수"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3259,15 +3299,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "오리지널아부라소바",
-        "카라아부라소바"
+        "카라아부라소바",
+        "오리지널아부라소바"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.688600Z",
-      "updatedAt": "2026-01-17T00:35:49.688600Z"
+      "createdAt": "2026-01-17T00:35:49.6886Z",
+      "updatedAt": "2026-01-17T00:35:49.6886Z"
     },
     {
       "restaurantId": 218,
@@ -3347,8 +3387,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "매운라멘",
-        "돈코츠라멘"
+        "돈코츠라멘",
+        "매운라멘"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3369,8 +3409,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "김치찜",
-        "삼겹살"
+        "삼겹살",
+        "김치찜"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3413,15 +3453,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "촌국수",
-        "왕만두"
+        "왕만두",
+        "촌국수"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.623600Z",
-      "updatedAt": "2026-01-17T00:35:49.623600Z"
+      "createdAt": "2026-01-17T00:35:49.6236Z",
+      "updatedAt": "2026-01-17T00:35:49.6236Z"
     },
     {
       "restaurantId": 210,
@@ -3478,8 +3518,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "소곱창낙지볶음",
-        "낙지볶음"
+        "낙지볶음",
+        "소곱창낙지볶음"
       ],
       "nearOfficeNames": [
         "전북지사"
@@ -3521,8 +3561,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "보쌈정식",
-        "칼국수"
+        "칼국수",
+        "보쌈정식"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3543,8 +3583,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "낙새",
-        "낙곱새"
+        "낙곱새",
+        "낙새"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3608,8 +3648,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "수육백반",
-        "돼지국밥"
+        "돼지국밥",
+        "수육백반"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3630,8 +3670,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "냉우동",
-        "신야정식"
+        "신야정식",
+        "냉우동"
       ],
       "nearOfficeNames": [
         "서울중부지사",
@@ -3674,8 +3714,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "시그니처블렌드커피",
-        "두쫀쿠"
+        "두쫀쿠",
+        "시그니처블렌드커피"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3696,8 +3736,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "두쫀쿠",
-        "버터바"
+        "버터바",
+        "두쫀쿠"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3725,8 +3765,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.402090Z",
-      "updatedAt": "2026-01-17T00:35:49.402090Z"
+      "createdAt": "2026-01-17T00:35:49.40209Z",
+      "updatedAt": "2026-01-17T00:35:49.40209Z"
     },
     {
       "restaurantId": 195,
@@ -3740,15 +3780,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "피스타치오크로플",
-        "두쫀쿠"
+        "두쫀쿠",
+        "피스타치오크로플"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.378370Z",
-      "updatedAt": "2026-01-17T00:35:49.378370Z"
+      "createdAt": "2026-01-17T00:35:49.37837Z",
+      "updatedAt": "2026-01-17T00:35:49.37837Z"
     },
     {
       "restaurantId": 194,
@@ -3762,8 +3802,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "아르베크림라떼",
-        "두쫀쿠"
+        "두쫀쿠",
+        "아르베크림라떼"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3784,8 +3824,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "초코까눌레",
-        "두쫀쿠"
+        "두쫀쿠",
+        "초코까눌레"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3806,8 +3846,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "무화과휘낭시에",
-        "두쫀쿠"
+        "두쫀쿠",
+        "무화과휘낭시에"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3894,8 +3934,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "차즐리밀크티",
-        "두쫀쿠"
+        "두쫀쿠",
+        "차즐리밀크티"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3916,8 +3956,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "두쫀쿠",
-        "아이스크림라떼"
+        "아이스크림라떼",
+        "두쫀쿠"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -3982,8 +4022,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "전통화과자",
-        "두쫀쿠"
+        "두쫀쿠",
+        "전통화과자"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4026,15 +4066,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "수제쿠키세트",
-        "두쫀쿠"
+        "두쫀쿠",
+        "수제쿠키세트"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.258780Z",
-      "updatedAt": "2026-01-17T00:35:49.258780Z"
+      "createdAt": "2026-01-17T00:35:49.25878Z",
+      "updatedAt": "2026-01-17T00:35:49.25878Z"
     },
     {
       "restaurantId": 181,
@@ -4048,8 +4088,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "에그타르트",
-        "두쫀쿠"
+        "두쫀쿠",
+        "에그타르트"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4136,8 +4176,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "레이어드케이크",
-        "두쫀쿠"
+        "두쫀쿠",
+        "레이어드케이크"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4268,8 +4308,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "커스터드푸딩",
-        "두쫀쿠"
+        "두쫀쿠",
+        "커스터드푸딩"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4334,15 +4374,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "부산식돼지국밥",
-        "밀양식돼지국밥"
+        "밀양식돼지국밥",
+        "부산식돼지국밥"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:49.069600Z",
-      "updatedAt": "2026-01-17T00:35:49.069600Z"
+      "createdAt": "2026-01-17T00:35:49.0696Z",
+      "updatedAt": "2026-01-17T00:35:49.0696Z"
     },
     {
       "restaurantId": 167,
@@ -4356,8 +4396,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "항정국밥",
-        "고기국밥"
+        "고기국밥",
+        "항정국밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4422,8 +4462,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "화이트라구",
-        "우니파스타"
+        "우니파스타",
+        "화이트라구"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4510,8 +4550,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "히츠마부시",
-        "우나쥬"
+        "우나쥬",
+        "히츠마부시"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4576,8 +4616,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "냉국수",
-        "쿠이모둠카츠"
+        "쿠이모둠카츠",
+        "냉국수"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4598,8 +4638,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "명란우삼겹덮밥",
-        "텐동"
+        "텐동",
+        "명란우삼겹덮밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4620,8 +4660,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "월강짬뽕",
-        "유린기"
+        "유린기",
+        "월강짬뽕"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4642,8 +4682,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "에비동",
-        "가츠동"
+        "가츠동",
+        "에비동"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4664,8 +4704,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "솥뚜껑목살",
-        "솥뚜껑삼겹살"
+        "솥뚜껑삼겹살",
+        "솥뚜껑목살"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4708,8 +4748,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "야키토리",
-        "호르몬구이"
+        "호르몬구이",
+        "야키토리"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4774,8 +4814,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "목살스테이크",
-        "디에이블파스타"
+        "디에이블파스타",
+        "목살스테이크"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4884,15 +4924,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "모듬사시미",
-        "메로구이"
+        "메로구이",
+        "모듬사시미"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:48.718400Z",
-      "updatedAt": "2026-01-17T00:35:48.718400Z"
+      "createdAt": "2026-01-17T00:35:48.7184Z",
+      "updatedAt": "2026-01-17T00:35:48.7184Z"
     },
     {
       "restaurantId": 142,
@@ -4950,8 +4990,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "곱창전골",
-        "육회"
+        "육회",
+        "곱창전골"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -4994,8 +5034,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "누룩숙성목살",
-        "꽃항정살"
+        "꽃항정살",
+        "누룩숙성목살"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5038,8 +5078,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "차돌박이",
-        "급냉삼겹살"
+        "급냉삼겹살",
+        "차돌박이"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5082,8 +5122,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "육회비빔밥",
-        "소불고기전골"
+        "소불고기전골",
+        "육회비빔밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5104,8 +5144,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "쉬림프타코",
-        "시그니처파히타"
+        "시그니처파히타",
+        "쉬림프타코"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5170,8 +5210,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "꿔바로우",
-        "마라탕"
+        "마라탕",
+        "꿔바로우"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5192,8 +5232,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "사천식양고기마라훠궈",
-        "라라꿔바로우"
+        "라라꿔바로우",
+        "사천식양고기마라훠궈"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5214,8 +5254,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "우육면",
-        "탄탄면"
+        "탄탄면",
+        "우육면"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5258,8 +5298,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "북경오리",
-        "쿼바로우"
+        "쿼바로우",
+        "북경오리"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5280,8 +5320,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "대왕차돌박이",
-        "숙성삼겹살"
+        "숙성삼겹살",
+        "대왕차돌박이"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5346,8 +5386,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "손칼국수",
-        "비빔칼국수"
+        "비빔칼국수",
+        "손칼국수"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5390,15 +5430,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "이재모크러스트피자",
-        "치즈크러스트피자"
+        "치즈크러스트피자",
+        "이재모크러스트피자"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:48.539600Z",
-      "updatedAt": "2026-01-17T00:35:48.539600Z"
+      "createdAt": "2026-01-17T00:35:48.5396Z",
+      "updatedAt": "2026-01-17T00:35:48.5396Z"
     },
     {
       "restaurantId": 118,
@@ -5434,8 +5474,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "본육",
-        "직각어깨"
+        "직각어깨",
+        "본육"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5456,8 +5496,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "특항정살",
-        "등심덧살"
+        "등심덧살",
+        "특항정살"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5478,8 +5518,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "짜장면",
-        "탕수육"
+        "탕수육",
+        "짜장면"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5500,8 +5540,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "한우육회",
-        "소갈비살"
+        "소갈비살",
+        "한우육회"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5522,8 +5562,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "밀크티",
-        "페스츄리"
+        "페스츄리",
+        "밀크티"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5566,8 +5606,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "땡초김밥",
-        "달인김밥"
+        "달인김밥",
+        "땡초김밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5610,8 +5650,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "우럭매운탕",
-        "참가자미물회"
+        "참가자미물회",
+        "우럭매운탕"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5632,15 +5672,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "김밥",
-        "손칼국수"
+        "손칼국수",
+        "김밥"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:48.467610Z",
-      "updatedAt": "2026-01-17T00:35:48.467610Z"
+      "createdAt": "2026-01-17T00:35:48.46761Z",
+      "updatedAt": "2026-01-17T00:35:48.46761Z"
     },
     {
       "restaurantId": 107,
@@ -5720,8 +5760,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "딸기슈페너",
-        "만디라떼"
+        "만디라떼",
+        "딸기슈페너"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5831,8 +5871,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "모찌리도후",
-        "가지덴가쿠"
+        "가지덴가쿠",
+        "모찌리도후"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5875,8 +5915,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "야키토리",
-        "백탄코스"
+        "백탄코스",
+        "야키토리"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -5897,15 +5937,15 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "감자뇨끼",
-        "통영굴오일파스타"
+        "통영굴오일파스타",
+        "감자뇨끼"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:48.388730Z",
-      "updatedAt": "2026-01-17T00:35:48.388730Z"
+      "createdAt": "2026-01-17T00:35:48.38873Z",
+      "updatedAt": "2026-01-17T00:35:48.38873Z"
     },
     {
       "restaurantId": 95,
@@ -6050,8 +6090,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "경양식돈가스",
-        "매운돈가스"
+        "매운돈가스",
+        "경양식돈가스"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6094,8 +6134,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "오색타다키동",
-        "시그니처부센동"
+        "시그니처부센동",
+        "오색타다키동"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6116,8 +6156,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "누룽지통닭장작구이",
-        "누룽지화산통닭"
+        "누룽지화산통닭",
+        "누룽지통닭장작구이"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6138,8 +6178,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "2인사시미",
-        "고등어봉초밥"
+        "고등어봉초밥",
+        "2인사시미"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6160,8 +6200,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "생선회",
-        "아나고조림"
+        "아나고조림",
+        "생선회"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6206,8 +6246,8 @@
       "isGroup4": true,
       "isGroup8": false,
       "representativeMenuNames": [
-        "돼지고기샤브정식",
-        "프리미엄한우샤브"
+        "프리미엄한우샤브",
+        "돼지고기샤브정식"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6250,8 +6290,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "가지만두",
-        "명란감자전"
+        "명란감자전",
+        "가지만두"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -6315,8 +6355,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "에그인헬",
-        "화덕피자"
+        "화덕피자",
+        "에그인헬"
       ],
       "nearOfficeNames": [
         "경기동부지사"
@@ -6336,8 +6376,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한정식코스",
-        "보리굴비정식"
+        "보리굴비정식",
+        "한정식코스"
       ],
       "nearOfficeNames": [
         "대구지사"
@@ -6378,14 +6418,14 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "쉬림프골드",
-        "포테이토골드"
+        "포테이토골드",
+        "쉬림프골드"
       ],
       "nearOfficeNames": [
         "경북지사"
       ],
-      "createdAt": "2026-01-17T00:35:48.240420Z",
-      "updatedAt": "2026-01-17T00:35:48.240420Z"
+      "createdAt": "2026-01-17T00:35:48.24042Z",
+      "updatedAt": "2026-01-17T00:35:48.24042Z"
     },
     {
       "restaurantId": 72,
@@ -6399,8 +6439,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "모둠사시미",
-        "히라메고노와다"
+        "히라메고노와다",
+        "모둠사시미"
       ],
       "nearOfficeNames": [
         "서울남부지사"
@@ -6420,8 +6460,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "보리굴비반상",
-        "바다정식"
+        "바다정식",
+        "보리굴비반상"
       ],
       "nearOfficeNames": [
         "서울중부지사"
@@ -6504,8 +6544,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "강원나물밥",
-        "한정식코스"
+        "한정식코스",
+        "강원나물밥"
       ],
       "nearOfficeNames": [
         "강원서부지사"
@@ -6525,8 +6565,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "전복삼계탕",
-        "전복정식"
+        "전복정식",
+        "전복삼계탕"
       ],
       "nearOfficeNames": [
         "인천남부지사"
@@ -6552,8 +6592,8 @@
       "nearOfficeNames": [
         "대전지사"
       ],
-      "createdAt": "2026-01-17T00:35:48.156510Z",
-      "updatedAt": "2026-01-17T00:35:48.156510Z"
+      "createdAt": "2026-01-17T00:35:48.15651Z",
+      "updatedAt": "2026-01-17T00:35:48.15651Z"
     },
     {
       "restaurantId": 64,
@@ -6567,8 +6607,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "비즈니스코스",
-        "긴자정식"
+        "긴자정식",
+        "비즈니스코스"
       ],
       "nearOfficeNames": [
         "경기동부지사"
@@ -6588,14 +6628,14 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "전가복",
-        "어항동고"
+        "어항동고",
+        "전가복"
       ],
       "nearOfficeNames": [
         "경기중부지사"
       ],
-      "createdAt": "2026-01-17T00:35:48.142390Z",
-      "updatedAt": "2026-01-17T00:35:48.142390Z"
+      "createdAt": "2026-01-17T00:35:48.14239Z",
+      "updatedAt": "2026-01-17T00:35:48.14239Z"
     },
     {
       "restaurantId": 62,
@@ -6609,8 +6649,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "떡갈비정식",
-        "전주비빔밥"
+        "전주비빔밥",
+        "떡갈비정식"
       ],
       "nearOfficeNames": [
         "전북지사"
@@ -6630,8 +6670,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "생선구이정식",
-        "보리굴비정식"
+        "보리굴비정식",
+        "생선구이정식"
       ],
       "nearOfficeNames": [
         "광주지사"
@@ -6714,8 +6754,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "꼬막비빔밥",
-        "해물뚝배기"
+        "해물뚝배기",
+        "꼬막비빔밥"
       ],
       "nearOfficeNames": [
         "충남지사"
@@ -6758,8 +6798,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한우불고기",
-        "골동면"
+        "골동면",
+        "한우불고기"
       ],
       "nearOfficeNames": [
         "서울중부지사"
@@ -6779,8 +6819,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "김치찌개",
-        "제육볶음"
+        "제육볶음",
+        "김치찌개"
       ],
       "nearOfficeNames": [
         "광주지사"
@@ -6800,8 +6840,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "나만의레시피보울",
-        "포케"
+        "포케",
+        "나만의레시피보울"
       ],
       "nearOfficeNames": [
         "광주지사"
@@ -6842,14 +6882,14 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "분짜",
-        "양지쌀국수"
+        "양지쌀국수",
+        "분짜"
       ],
       "nearOfficeNames": [
         "서울중부지사"
       ],
-      "createdAt": "2026-01-17T00:35:48.037950Z",
-      "updatedAt": "2026-01-17T00:35:48.037950Z"
+      "createdAt": "2026-01-17T00:35:48.03795Z",
+      "updatedAt": "2026-01-17T00:35:48.03795Z"
     },
     {
       "restaurantId": 50,
@@ -6885,8 +6925,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "소고기쌀국수",
-        "반쎄오"
+        "반쎄오",
+        "소고기쌀국수"
       ],
       "nearOfficeNames": [
         "서울중부지사"
@@ -6906,8 +6946,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "탕수육",
-        "뚝배기짬뽕"
+        "뚝배기짬뽕",
+        "탕수육"
       ],
       "nearOfficeNames": [
         "강원서부지사"
@@ -6927,8 +6967,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "멸치칼국수",
-        "장칼국수"
+        "장칼국수",
+        "멸치칼국수"
       ],
       "nearOfficeNames": [
         "강원서부지사"
@@ -6948,8 +6988,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "닭칼국수",
-        "닭곰탕"
+        "닭곰탕",
+        "닭칼국수"
       ],
       "nearOfficeNames": [
         "강원서부지사"
@@ -6969,14 +7009,14 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "돈코츠라멘",
-        "지로라멘"
+        "지로라멘",
+        "돈코츠라멘"
       ],
       "nearOfficeNames": [
         "대구지사"
       ],
-      "createdAt": "2026-01-17T00:35:47.991250Z",
-      "updatedAt": "2026-01-17T00:35:47.991250Z"
+      "createdAt": "2026-01-17T00:35:47.99125Z",
+      "updatedAt": "2026-01-17T00:35:47.99125Z"
     },
     {
       "restaurantId": 44,
@@ -6990,8 +7030,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "조개샤브",
-        "소고기샤브"
+        "소고기샤브",
+        "조개샤브"
       ],
       "nearOfficeNames": [
         "대구지사"
@@ -7032,8 +7072,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한우사골국시",
-        "이타왕돈까스"
+        "이타왕돈까스",
+        "한우사골국시"
       ],
       "nearOfficeNames": [
         "대구지사"
@@ -7075,8 +7115,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "오리백숙",
-        "오리불고기"
+        "오리불고기",
+        "오리백숙"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7185,15 +7225,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "본삼겹살",
-        "뼈목살"
+        "뼈목살",
+        "본삼겹살"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:47.898140Z",
-      "updatedAt": "2026-01-17T00:35:47.898140Z"
+      "createdAt": "2026-01-17T00:35:47.89814Z",
+      "updatedAt": "2026-01-17T00:35:47.89814Z"
     },
     {
       "restaurantId": 34,
@@ -7214,8 +7254,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:47.883130Z",
-      "updatedAt": "2026-01-17T00:35:47.883130Z"
+      "createdAt": "2026-01-17T00:35:47.88313Z",
+      "updatedAt": "2026-01-17T00:35:47.88313Z"
     },
     {
       "restaurantId": 33,
@@ -7339,8 +7379,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "끝집기본",
-        "끝집라면"
+        "끝집라면",
+        "끝집기본"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7361,8 +7401,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "양갈비",
-        "양고기전골"
+        "양고기전골",
+        "양갈비"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7383,8 +7423,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "하가우",
-        "가지튀김"
+        "가지튀김",
+        "하가우"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7427,8 +7467,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "물고기초밥",
-        "연어초밥"
+        "연어초밥",
+        "물고기초밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7449,8 +7489,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "통오징어먹물리조또",
-        "감자뇨끼"
+        "감자뇨끼",
+        "통오징어먹물리조또"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7515,8 +7555,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "간짜장",
-        "찹쌀탕수육"
+        "찹쌀탕수육",
+        "간짜장"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7559,15 +7599,15 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "한우불고기정식",
-        "한우갈비살"
+        "한우갈비살",
+        "한우불고기정식"
       ],
       "nearOfficeNames": [
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:47.634250Z",
-      "updatedAt": "2026-01-17T00:35:47.634250Z"
+      "createdAt": "2026-01-17T00:35:47.63425Z",
+      "updatedAt": "2026-01-17T00:35:47.63425Z"
     },
     {
       "restaurantId": 17,
@@ -7698,8 +7738,8 @@
         "부산지사",
         "본사"
       ],
-      "createdAt": "2026-01-17T00:35:47.571730Z",
-      "updatedAt": "2026-01-17T00:35:47.571730Z"
+      "createdAt": "2026-01-17T00:35:47.57173Z",
+      "updatedAt": "2026-01-17T00:35:47.57173Z"
     },
     {
       "restaurantId": 11,
@@ -7779,8 +7819,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "평일런치뷔페",
-        "시그니처스테이크"
+        "시그니처스테이크",
+        "평일런치뷔페"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7845,8 +7885,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "낙지볶음",
-        "낙지전골"
+        "낙지전골",
+        "낙지볶음"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7867,8 +7907,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "로스카츠(등심)",
-        "치즈카츠"
+        "치즈카츠",
+        "로스카츠(등심)"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7889,8 +7929,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "돌솥비빔밥",
-        "한우불고기"
+        "한우불고기",
+        "돌솥비빔밥"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7911,8 +7951,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "룰루랄라아부라소바",
-        "오리지널아부라소바"
+        "오리지널아부라소바",
+        "룰루랄라아부라소바"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -7933,8 +7973,8 @@
       "isGroup4": true,
       "isGroup8": true,
       "representativeMenuNames": [
-        "차돌짬뽕",
-        "쟁반짜장"
+        "쟁반짜장",
+        "차돌짬뽕"
       ],
       "nearOfficeNames": [
         "부산지사",
@@ -12185,8 +12225,8 @@
         "isSolo": true,
         "isGroup4": true,
         "isGroup8": true,
-        "createdAt": "2026-01-17T00:35:48.142390Z",
-        "updatedAt": "2026-01-17T00:35:48.142390Z",
+        "createdAt": "2026-01-17T00:35:48.14239Z",
+        "updatedAt": "2026-01-17T00:35:48.14239Z",
         "officeName": "경기중부지사",
         "representativeMenuNames": [
           "전가복",
@@ -12206,8 +12246,8 @@
         "isSolo": false,
         "isGroup4": true,
         "isGroup8": true,
-        "createdAt": "2026-01-17T00:35:48.156510Z",
-        "updatedAt": "2026-01-17T00:35:48.156510Z",
+        "createdAt": "2026-01-17T00:35:48.15651Z",
+        "updatedAt": "2026-01-17T00:35:48.15651Z",
         "officeName": "대전지사",
         "representativeMenuNames": [
           "생선초밥",
@@ -12880,8 +12920,8 @@
         "isSolo": true,
         "isGroup4": true,
         "isGroup8": false,
-        "createdAt": "2026-01-17T00:35:48.388730Z",
-        "updatedAt": "2026-01-17T00:35:48.388730Z",
+        "createdAt": "2026-01-17T00:35:48.38873Z",
+        "updatedAt": "2026-01-17T00:35:48.38873Z",
         "representativeMenuNames": [
           "통영굴오일파스타",
           "감자뇨끼"
@@ -13074,8 +13114,8 @@
         "isSolo": true,
         "isGroup4": true,
         "isGroup8": true,
-        "createdAt": "2026-01-17T00:35:47.571730Z",
-        "updatedAt": "2026-01-17T00:35:47.571730Z",
+        "createdAt": "2026-01-17T00:35:47.57173Z",
+        "updatedAt": "2026-01-17T00:35:47.57173Z",
         "representativeMenuNames": [
           "대구뽈탕",
           "대구뽈찜"

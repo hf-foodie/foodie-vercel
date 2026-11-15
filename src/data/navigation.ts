@@ -14,6 +14,7 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       children: [
         { id: 'explore-roulette', href: '/game/roulette', name: '오늘의메뉴' },
         { id: 'explore-worldcup', href: '/game/worldcup', name: '맛집월드컵' },
+        { id: 'explore-bingo', href: '/game/bingo', name: '맛집빙고' },
       ],
     },
     {
