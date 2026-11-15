@@ -1,5 +1,19 @@
 // Checked 2026-11-15. See docs/four-restaurant-photos-20261115.md.
 export const restaurantPhotos: Record<number, { src: string; alt: string; sourceUrl: string; sourceLabel?: string; square?: boolean }> = {
+  "433": {
+  "src": "/images/restaurant/thumbnail/433-verified-20261115.webp",
+  "alt": "리파인 전포 매장의 음식",
+  "sourceUrl": "https://www.diningcode.com/profile.php?rid=U5mOrtBWlqZd",
+  "sourceLabel": "다이닝코드 해당 지점 방문자 사진",
+  "square": true
+},
+  "432": {
+  "src": "/images/restaurant/thumbnail/432-verified-20261115.webp",
+  "alt": "손내향미 전포 매장의 갈비솥밥",
+  "sourceUrl": "https://www.diningcode.com/profile.php?rid=sRdEdIrcwy9v",
+  "sourceLabel": "다이닝코드 해당 지점 방문자 사진",
+  "square": true
+},
   "431": {
   "src": "/images/restaurant/thumbnail/431-verified-20261115.webp",
   "alt": "족다귀 동래 매장의 족다귀·불족다귀 구이",

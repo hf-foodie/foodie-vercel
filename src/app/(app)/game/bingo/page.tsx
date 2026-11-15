@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useContext, useEffect, useMemo, useState } from 'react'
 import { ThemeContext } from '@/app/theme-provider'
 import { Breadcrumb, PageHeading } from '@/components/krds/PageHeading'
+import RestaurantPhoto, { RestaurantPhotoCredit } from '@/components/krds/RestaurantPhoto'
 import ConfirmDialog from '@/components/krds/ConfirmDialog'
 import { BINGO_KEY, bingoLines, missions, missionRestaurants, newBingo, readBingo, restaurantRegion, toggleMission, type BingoState, type MissionId } from '@/lib/foodBingo'
 import styles from './bingo.module.css'
@@ -56,11 +57,10 @@ export default function FoodBingo() {
         <h3>찾아볼 등록 식당 · {rows.length}곳</h3>
         <p className="kr-form-note">등록된 메뉴·분류·혼밥 정보 기준입니다. 처음 방문·동료 추천·재방문·새 메뉴 여부는 직접 판단해 주세요. 후기가 없는 식당도 포함됩니다.</p>
         {!rows.length && <p>{selected === 'region' && !board.region ? '기준 지역을 선택하면 다른 시·도의 식당을 보여드립니다.' : '조건에 맞는 등록 식당이 없습니다. 다른 미션을 살펴보세요.'}</p>}
-        <ul className={styles.results}>{rows.slice(page*6,page*6+6).map(r => <li key={r.restaurantId}><h4>{r.name}</h4><p>{r.address}</p><p>{r.representativeMenuNames.join(' · ') || '대표 메뉴 미등록'}</p><Link className="kr-button" href={`/blogs?restaurantId=${r.restaurantId}`}>{r.name} 후기 찾기</Link></li>)}</ul>
+        <ul className={styles.results}>{rows.slice(page*6,page*6+6).map(r => <li key={r.restaurantId}><div className={styles.photo}><RestaurantPhoto restaurantId={r.restaurantId} title={r.name} fallbackSrc={`/images/restaurant/thumbnail/${r.restaurantId}.jpg`} /></div><h4>{r.name}</h4><p>{r.address}</p><p>{r.representativeMenuNames.join(' · ') || '대표 메뉴 미등록'}</p><RestaurantPhotoCredit restaurantId={r.restaurantId} /><Link className="kr-button" href={`/blogs?restaurantId=${r.restaurantId}`}>{r.name} 후기 찾기</Link></li>)}</ul>
         {rows.length>6 && <nav className="kr-actions" aria-label="미션 식당 페이지"><button className="kr-button" disabled={page === 0} onClick={() => setPage(p=>p-1)}>이전</button><span aria-live="polite">{page+1} / {Math.ceil(rows.length/6)}</span><button className="kr-button" disabled={(page+1)*6>=rows.length} onClick={() => setPage(p=>p+1)}>다음</button></nav>}
       </section>
       <ConfirmDialog open={reset} title="새 빙고판을 만들까요?" description="현재 완료 체크와 기념 배지가 초기화되고, 9개 미션의 배치가 바뀝니다." confirmLabel="초기화하고 새로 시작" busy={false} onClose={() => setReset(false)} onConfirm={() => { const next = newBingo(); if(next.order.join() === board.order.join()) next.order.push(next.order.shift()!); save(next); setSelected('first'); setPage(0); setReset(false) }} />
     </>}
   </main>
 }
-

@@ -1,6 +1,45 @@
 {
-  "snapshotAt": "2026-11-15T12:35:41.0420839Z",
+  "snapshotAt": "2026-11-15T13:19:37.493Z",
   "restaurants": [
+    {
+      "restaurantId": 433,
+      "name": "리파인",
+      "address": "부산 부산진구 서전로68번길 52 3층 Refine",
+      "phoneNumber": "0507-1355-5986",
+      "category": "한식",
+      "isLunch": false,
+      "isDinner": true,
+      "isSolo": false,
+      "isGroup4": true,
+      "isGroup8": false,
+      "representativeMenuNames": [
+        "명란파스타",
+        "크림수제비",
+        "감자전"
+      ],
+      "nearOfficeNames": [],
+      "createdAt": "2026-11-15T13:18:36.316508Z",
+      "updatedAt": "2026-11-15T13:18:36.316508Z"
+    },
+    {
+      "restaurantId": 432,
+      "name": "손내향미",
+      "address": "부산 부산진구 동성로30번길 4 1층",
+      "phoneNumber": "051-715-4648",
+      "category": "한식",
+      "isLunch": true,
+      "isDinner": true,
+      "isSolo": true,
+      "isGroup4": true,
+      "isGroup8": false,
+      "representativeMenuNames": [
+        "간장게장 구이",
+        "갈비솥밥"
+      ],
+      "nearOfficeNames": [],
+      "createdAt": "2026-11-15T13:18:36.316508Z",
+      "updatedAt": "2026-11-15T13:18:36.316508Z"
+    },
     {
       "restaurantId": 431,
       "name": "족다귀",
