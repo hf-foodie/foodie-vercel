@@ -1,3 +1,4 @@
+import ranking from '@/data/preview-ranking.json'
 import snapshot from '@/data/preview-snapshot.json'
 
 export const PREVIEW_NOTICE = '내부망에 정식 서비스 오픈 후 이용가능'
@@ -12,6 +13,7 @@ export function previewResponse(input: string, method = 'GET'): Response {
   if (!['GET','HEAD'].includes(method.toUpperCase())) return Response.json({message:PREVIEW_NOTICE},{status:405,headers:{Allow:'GET, HEAD'}})
   const url = new URL(input, 'https://preview.invalid'), path = url.pathname, p = url.searchParams
   const json = (value: unknown) => Response.json(value, {headers:{'Cache-Control':'no-store'}})
+  if (path === '/rankings/weekly') { const period=p.get('period')==='previous'?'previous':'current', office=p.get('office')||''; const report=ranking[period]; return json(office ? (ranking.scopes as Record<string,typeof report>)[office+':'+period] || {...report,entries:[]} : report) }
   if (path === '/me') return Response.json({message:PREVIEW_NOTICE},{status:401})
   if (path === '/me/bookmarks/ids') return json([])
   if (path === '/restaurants/count') return json(snapshot.restaurants.filter(x=>includes(x.address,p.get('address'))).length)

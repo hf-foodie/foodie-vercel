@@ -4,6 +4,8 @@ export async function getNavigation(role?: string | null): Promise<TNavigationIt
       id: '1',
       href: '/search',
       name: '맛집탐방',
+      type: 'dropdown',
+      children: [{id:'explore-search',href:'/search',name:'맛집 검색'},{id:'weekly-ranking',href:'/ranking',name:'주간 맛집 랭킹'}],
     },
     { id: 'records', href: '/records', name: '맛집 후기' },
     {
