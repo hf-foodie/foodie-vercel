@@ -1,5 +1,6 @@
 type Query = { get(name: string): string | null; getAll(name: string): string[] }
 const labels = {
+  '/ranking': '주간 맛집 랭킹',
   '/dormitory/gyungdong': '경동파크타워 인근 맛집',
   '/game/bingo': '맛집빙고',
   '/game/worldcup': '맛집월드컵',
@@ -15,7 +16,7 @@ export function restaurantListHref(path: RestaurantListPath, params: Query) {
     const value = params.get(key)
     if (value) query.set(key, value)
   }
-  for (const key of (path === '/search' || path === '/records') ? ['s','office','restaurantPage','tab','region','address','restaurantName','tag','sort-by'] : path === '/restaurant/hf' ? ['office'] : path === '/game/bingo' ? ['mission','region'] : path === '/game/worldcup' ? ['winner','office','size'] : []) {
+  for (const key of (path === '/search' || path === '/records') ? ['s','office','restaurantPage','tab','region','address','restaurantName','tag','sort-by'] : path === '/ranking' ? ['period','office'] : path === '/restaurant/hf' ? ['office'] : path === '/game/bingo' ? ['mission','region'] : path === '/game/worldcup' ? ['winner','office','size'] : []) {
     const value = params.get(key)
     if (value) query.set(key, value)
   }

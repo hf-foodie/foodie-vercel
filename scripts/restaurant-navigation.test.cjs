@@ -47,3 +47,13 @@ test('restaurant return accepts only supported lists and filters', () => {
   for(const value of ['//example.com','https://example.com','/restaurant/hf/other','/restaurant/unknown','/restaurant/hf#bad','/restaurant/hf?x=\\bad']) assert.equal(restaurantReturnHref(value),null)
   assert.equal(restaurantReturnHref(null),null)
 })
+
+test('weekly ranking retains week and office through reviews and detail with safe return URL', () => {
+ const list=restaurantListHref('/ranking',new URLSearchParams('period=previous&office=본사'))
+ const reviews=new URL(restaurantReviewsHref(44,list),'http://localhost')
+ reviews.searchParams.set('page','2')
+ const detail=new URL('/posts/58'+searchQuery(reviews.searchParams),'http://localhost')
+ assert.equal(restaurantReturnHref(detail.searchParams.get('restaurantReturn')),list)
+ assert.equal(restaurantReturnHref('/ranking?period=previous&office=본사&redirect=https://evil.example'),list)
+ assert.equal(restaurantReturnHref('//evil.example/ranking?period=previous'),null)
+})
