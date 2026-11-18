@@ -1,5 +1,6 @@
 // Checked 2026-11-15. See docs/four-restaurant-photos-20261115.md.
 export const restaurantPhotos: Record<number, { src: string; alt: string; sourceUrl: string; sourceLabel?: string; square?: boolean }> = {
+  "451": {"src":"/images/restaurant/thumbnail/451-verified-20261118.webp","alt":"나오리쇼쿠 차슈와 오차즈케 한상","sourceUrl":"https://www.diningcode.com/profile.php?rid=LAtm4ljf9Hte","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
   "107": {"src":"/images/restaurant/thumbnail/107-verified-20261118.webp","alt":"바오하우스 바오와 마파두부 등 음식","sourceUrl":"https://www.diningcode.com/profile.php?rid=loEjHpQf1ZL7","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
   "450": {"src":"/images/restaurant/thumbnail/450-verified-20261118.webp","alt":"동면식밀면 밀면","sourceUrl":"https://www.diningcode.com/profile.php?rid=xmokpLvHDua5","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
   "128": {"src":"/images/restaurant/thumbnail/128-verified-20261118.webp","alt":"굿모닝홍콩 전포 면 요리와 덮밥","sourceUrl":"https://www.diningcode.com/profile.php?rid=ueWgYHpUhbic","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
