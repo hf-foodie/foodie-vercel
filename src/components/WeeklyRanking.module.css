@@ -1,0 +1,18 @@
+/* Keep preview filter dimensions independent of utility generation. */
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  min-width: 0;
+}
+.filters select {
+  width: 100%;
+  min-width: 0;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem;
+}
+@media (min-width: 640px) {
+  .filters label { width: auto; flex-direction: row; align-items: center; }
+  .filters label:first-child select { width: 10rem; }
+  .filters label:nth-child(2) select { width: 18rem; }
+}

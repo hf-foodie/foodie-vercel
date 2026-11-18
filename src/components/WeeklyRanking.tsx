@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import styles from './WeeklyRanking.module.css'
 import { useSearchParams } from 'next/navigation'
 import { restaurantListHref, restaurantReviewsHref } from '@/lib/restaurantNavigation'
 import { saveBookmarkPosition, useBookmarkScroll } from '@/lib/bookmarkScroll'
@@ -25,7 +26,7 @@ export default function WeeklyRanking({compact=false}:{compact?:boolean}) {
  useBookmarkScroll(listHref,!compact&&!!data,'ranking-restaurant-')
  const body=<>
   {compact?<div className="kr-section-heading"><h2>이번 주 인기 맛집 TOP 3</h2><Link className="kr-link" href="/ranking">전체 랭킹 →</Link></div>:<><Breadcrumb current="주간 맛집 랭킹"/><PageHeading title="주간 맛집 랭킹" description="이번 주 동료들이 찾고, 좋아하고, 저장한 맛집입니다."/></>}
-  {!compact&&<div className="kr-panel my-5 flex flex-wrap gap-4"><label className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center"><span className="shrink-0">집계 주차</span><select className="w-full min-w-0 rounded border p-3 pr-10 sm:w-40" value={period} onChange={e=>updateFilters(e.target.value,office)}><option value="current">이번 주</option><option value="previous">지난주</option></select></label><label className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center"><span className="shrink-0">본사·지사</span><select className="w-full min-w-0 rounded border p-3 pr-10 sm:w-72" value={office} onChange={e=>updateFilters(period,e.target.value)}><option value="">전체</option>{(result?.data?.offices||[]).map(o=><option key={o}>{o}</option>)}</select></label></div>}
+  {!compact&&<div className={`kr-panel my-5 flex flex-wrap gap-4 ${styles.filters}`}><label className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center"><span className="shrink-0">집계 주차</span><select className="w-full min-w-0 rounded border p-3 pr-10 sm:w-40" value={period} onChange={e=>updateFilters(e.target.value,office)}><option value="current">이번 주</option><option value="previous">지난주</option></select></label><label className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row sm:items-center"><span className="shrink-0">본사·지사</span><select className="w-full min-w-0 rounded border p-3 pr-10 sm:w-72" value={office} onChange={e=>updateFilters(period,e.target.value)}><option value="">전체</option>{(result?.data?.offices||[]).map(o=><option key={o}>{o}</option>)}</select></label></div>}
   {!data&&!error&&<p role="status">주간 랭킹을 불러오는 중입니다.</p>}
   {error&&<div role="alert"><p>{error}</p><button className="kr-button" onClick={()=>setRetry(x=>x+1)}>다시 시도</button></div>}
   {data&&<>
