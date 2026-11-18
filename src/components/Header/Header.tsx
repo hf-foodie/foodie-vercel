@@ -1,7 +1,8 @@
 'use client'
+import { LoginNotice } from '@/components/MemberAccess'
 import { getNavigation, TNavigationItem } from '@/data/navigation'
 import { Dialog, DialogBackdrop, DialogPanel, DialogTitle } from '@headlessui/react'
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -113,6 +114,7 @@ export default function Header({ className }: { bottomBorder?: boolean; classNam
           )
         )}
       </nav>
+      <div className="kr-container kr-header-member-notice"><LoginNotice /></div>
       <Dialog open={open} onClose={() => setOpen(false)} className="kr-dialog">
         <DialogBackdrop className="kr-dialog-backdrop" />
         <div className="kr-dialog-position">
@@ -126,6 +128,7 @@ export default function Header({ className }: { bottomBorder?: boolean; classNam
             <div className="mt-5">
               <AvatarDropdown />
             </div>
+            <LoginNotice />
             <nav className="kr-mobile-nav" aria-label="모바일 주 메뉴">
               <MenuLinks items={menu} close={() => setOpen(false)} />
             </nav>

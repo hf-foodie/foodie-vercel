@@ -1,7 +1,7 @@
 import { TNavigationItem } from '@/data/navigation'
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import clsx from 'clsx'
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import { FC } from 'react'
 
 const Lv1MenuItem = ({ menuItem }: { menuItem: TNavigationItem }) => {

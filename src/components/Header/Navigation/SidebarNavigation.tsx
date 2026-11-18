@@ -3,7 +3,7 @@
 import { TNavigationItem } from '@/data/navigation'
 import ButtonPrimary from '@/shared/ButtonPrimary'
 import { Divider } from '@/shared/divider'
-import { Link } from '@/shared/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import { Disclosure, DisclosureButton, DisclosurePanel, useClose } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/solid'
 import { Search01Icon } from '@hugeicons/core-free-icons'

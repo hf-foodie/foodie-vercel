@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 export default function Footer() {
   return (
     <footer className="kr-footer">

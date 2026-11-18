@@ -1,6 +1,6 @@
 import { Breadcrumb } from '@/components/krds/PageHeading'
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import styles from './page.module.css'
 
 export const metadata: Metadata = {

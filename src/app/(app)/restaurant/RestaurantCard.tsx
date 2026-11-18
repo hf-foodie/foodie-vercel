@@ -3,7 +3,7 @@ import BookmarkBtn from '@/components/BookmarkBtn'
 import { restaurantReviewsHref } from '@/lib/restaurantNavigation'
 import { saveBookmarkPosition as saveRestaurantPosition } from '@/lib/bookmarkScroll'
 import { TRestaurant } from '@/data/types'
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import RestaurantPhoto, { RestaurantPhotoCredit } from '@/components/krds/RestaurantPhoto'
 export default function RestaurantCard({ data, className = '', listHref }: { data: TRestaurant; className?: string; listHref?: string }) {
   return (

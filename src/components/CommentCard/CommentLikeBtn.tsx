@@ -1,4 +1,5 @@
 'use client'
+import { useMemberAccess } from '@/components/MemberAccess'
 
 import convertNumbThousand from '@/utils/convertNumbThousand'
 import { HeartIcon } from '@heroicons/react/24/outline'
@@ -13,10 +14,11 @@ interface Props {
 }
 
 const CommentLikeBtn: FC<Props> = ({ className, likeCount, isLiked: likedProps, postId }) => {
+  const { allowed, reason } = useMemberAccess()
   const [isLiked, setIsLiked] = useState(likedProps)
 
   return (
-    <button
+    <button disabled={!allowed} aria-label={allowed ? '댓글 좋아요' : reason}
       className={clsx(
         'comment-like-btn group flex h-8 items-center rounded-full ps-2 pe-3 text-xs leading-none transition-colors',
         className,

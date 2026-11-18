@@ -11,7 +11,7 @@ import { getBranches } from '@/services/branch'
 import { getMagazines } from '@/services/magazine'
 import { getAllRestaurantList } from '@/services/restaurant'
 import { latestRestaurants } from '@/lib/latestRestaurants'
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import LatestRestaurantCarousel from '@/components/LatestRestaurantCarousel'
 
 const Page = async () => {
@@ -57,7 +57,7 @@ const Page = async () => {
               ['/restaurant/hf', '주금공 맛집', '우리 지사 주변 맛집'],
               ['/influencer/intern', '인턴’s Pick', '동료들이 추천하는 한 끼'],
               ['/search?sort-by=most-liked', '좋아요 많은 맛집', '후기로 찾는 인기 맛집'],
-              ['/post/new', '맛집 등록', '나만의 맛집을 나눠요'],
+              ['/post/new', '후기 등록', '나만의 맛집을 나눠요'],
             ].map(([href, title, sub]) => (
               <Link href={href} key={href}>
                 <span>

@@ -1,4 +1,5 @@
 'use client'
+import { useMemberAccess } from '@/components/MemberAccess'
 
 import { ArrowTurnBackwardIcon } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon } from '@hugeicons/react'
@@ -11,8 +12,9 @@ interface Props {
 }
 
 const CommentReplyBtn: FC<Props> = ({ className, onClick }) => {
+  const { allowed, reason } = useMemberAccess()
   return (
-    <button
+    <button disabled={!allowed} aria-label={allowed ? '답글 작성' : reason}
       className={clsx(
         'comment-reply-btn flex h-8 min-w-16 items-center rounded-full bg-neutral-50 ps-2 pe-3 text-xs text-neutral-600 transition-colors hover:bg-teal-50 hover:text-teal-600 dark:bg-white/10 dark:text-neutral-200 dark:hover:bg-white/10 dark:hover:text-teal-500',
         className

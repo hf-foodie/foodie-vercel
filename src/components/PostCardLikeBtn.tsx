@@ -1,10 +1,11 @@
 'use client'
+import { useMemberAccess } from '@/components/MemberAccess'
 import { clientFetch } from '@/lib/clientFetch'
 
 import convertNumbThousand from '@/utils/convertNumbThousand'
 import { HeartIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
-import { FC, useEffect, useState } from 'react'
+import { FC, useState } from 'react'
 
 interface Props {
   className?: string
@@ -14,14 +15,13 @@ interface Props {
 }
 
 const PostCardLikeBtn: FC<Props> = ({ className, likeCount = 0, liked, postId }) => {
-  const [isLiked, setisLiked] = useState(liked)
-
-  useEffect(() => {
-    setisLiked(liked)
-  }, [liked])
+  const { allowed, reason } = useMemberAccess()
+  const [selection, setSelection] = useState<{ postId: string; initial: boolean | undefined; value: boolean | undefined } | null>(null)
+  const isLiked = selection?.postId === postId && selection.initial === liked ? selection.value : liked
+  const setisLiked = (value: boolean | undefined) => setSelection({ postId, initial: liked, value })
 
   const handleLike = async () => {
-    if (!postId) return
+    if (!allowed || !postId) return
 
     const previousLiked = isLiked
     setisLiked(!isLiked)
@@ -64,8 +64,9 @@ const PostCardLikeBtn: FC<Props> = ({ className, likeCount = 0, liked, postId })
           ? 'bg-rose-50 text-rose-600 dark:bg-rose-100'
           : 'bg-neutral-50 hover:bg-rose-50 hover:text-rose-600 dark:bg-white/10 dark:hover:bg-white/10 dark:hover:text-rose-400'
       )}
+      disabled={!allowed}
       onClick={handleLike}
-      title="좋아요" aria-label="좋아요" aria-pressed={isLiked}
+      title={allowed ? '좋아요' : reason} aria-label={allowed ? '좋아요' : '좋아요 · ' + reason} aria-pressed={isLiked}
     >
       <HeartIcon className="size-5" fill={isLiked ? 'currentColor' : 'none'} />
 

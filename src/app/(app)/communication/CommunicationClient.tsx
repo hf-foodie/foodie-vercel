@@ -4,7 +4,7 @@ import { ForumCategory, ForumPost } from '@/data/types'
 import { clientFetch } from '@/lib/clientFetch'
 import { communicationListHref, communicationQuery } from '@/lib/communicationNavigation'
 import { saveCommunicationPosition, useCommunicationScroll } from '@/lib/communicationScroll'
-import Link from 'next/link'
+import { MemberLink as Link } from '@/components/MemberAccess'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { useEffect, useState } from 'react'
 const categories: ForumCategory[] = ['공지사항', '자율소통', '맛집제보', '기능요청', '버그제보']
