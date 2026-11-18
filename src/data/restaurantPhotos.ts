@@ -1,5 +1,10 @@
 // Checked 2026-11-15. See docs/four-restaurant-photos-20261115.md.
 export const restaurantPhotos: Record<number, { src: string; alt: string; sourceUrl: string; sourceLabel?: string; square?: boolean }> = {
+  "107": {"src":"/images/restaurant/thumbnail/107-verified-20261118.webp","alt":"바오하우스 바오와 마파두부 등 음식","sourceUrl":"https://www.diningcode.com/profile.php?rid=loEjHpQf1ZL7","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
+  "450": {"src":"/images/restaurant/thumbnail/450-verified-20261118.webp","alt":"동면식밀면 밀면","sourceUrl":"https://www.diningcode.com/profile.php?rid=xmokpLvHDua5","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
+  "128": {"src":"/images/restaurant/thumbnail/128-verified-20261118.webp","alt":"굿모닝홍콩 전포 면 요리와 덮밥","sourceUrl":"https://www.diningcode.com/profile.php?rid=ueWgYHpUhbic","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
+  "449": {"src":"/images/restaurant/thumbnail/449-verified-20261118.webp","alt":"송원물회횟집 물회","sourceUrl":"https://www.diningcode.com/profile.php?rid=H6LwDd72xDeL","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
+  "448": {"src":"/images/restaurant/thumbnail/448-verified-20261118.webp","alt":"대끼리야 조개와 해산물 요리","sourceUrl":"https://www.diningcode.com/profile.php?rid=JLtRaoUUdQGs","sourceLabel":"해당 지점 방문자 음식 사진","square":true},
 
   "446": {"sourceLabel":"사용자 제공 지점 사진","square":true,"sourceUrl":"","alt":"윤우재 문현샤브 칼국수 음식","src":"/images/restaurant/thumbnail/446-provided-20261116.png"},
   "447": {"sourceLabel":"사용자 제공 지점 사진","square":true,"sourceUrl":"","alt":"부산에뜬고등어 문현점 음식","src":"/images/restaurant/thumbnail/447-provided-20261116.png"},
