@@ -1,4 +1,4 @@
-import WeeklyRanking from '@/components/WeeklyRanking'
+import AdministratorPicks from '@/components/AdministratorPicks'
 import BackgroundSection from '@/components/BackgroundSection'
 import SectionAdvertisement from '@/components/SectionAdvertisement/SectionAdvertisement'
 import SectionBecommingAFoodie from '@/components/SectionBecommingAFoodie'
@@ -19,7 +19,8 @@ const Page = async () => {
   const accessToken = await validateAuth()
   const magazines = (await getMagazines(accessToken || '')).slice(0, 4)
   const branches = await getBranches(accessToken || '')
-  const latest = latestRestaurants(await getAllRestaurantList(), Infinity)
+  const restaurants = await getAllRestaurantList()
+  const latest = latestRestaurants(restaurants, Infinity)
   const touristAttractions = await getTouristAttraction()
 
   return (
@@ -49,7 +50,7 @@ const Page = async () => {
         </div>
       </section>
       <div className="kr-container">
-        <WeeklyRanking compact />
+        <AdministratorPicks restaurants={restaurants} />
         <section className="kr-home-section">
           <div className="kr-section-heading">
             <h2>취향에 맞게 둘러보기</h2>
