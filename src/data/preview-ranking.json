@@ -41,7 +41,44 @@
       "충남지사",
       "충북지사"
     ],
-    "entries": [],
+    "entries": [
+      {
+        "restaurantId": 455,
+        "name": "옛날장터",
+        "address": "부산 부산진구 가야대로 641-1",
+        "rank": 1,
+        "score": 48,
+        "views": 20,
+        "likes": 8,
+        "bookmarks": 4,
+        "participants": 16,
+        "change": "FIRST"
+      },
+      {
+        "restaurantId": 2,
+        "name": "김씨네붴",
+        "address": "부산 남구 황령대로74번길 95",
+        "rank": 2,
+        "score": 38,
+        "views": 15,
+        "likes": 7,
+        "bookmarks": 3,
+        "participants": 12,
+        "change": "FIRST"
+      },
+      {
+        "restaurantId": 12,
+        "name": "외가집",
+        "address": "부산 남구 전포대로92번길 3",
+        "rank": 3,
+        "score": 28,
+        "views": 10,
+        "likes": 6,
+        "bookmarks": 2,
+        "participants": 8,
+        "change": "FIRST"
+      }
+    ],
     "preview": true
   },
   "previous": {
@@ -1302,7 +1339,32 @@
         "충남지사",
         "충북지사"
       ],
-      "entries": [],
+      "entries": [
+        {
+          "restaurantId": 2,
+          "name": "김씨네붴",
+          "address": "부산 남구 황령대로74번길 95",
+          "rank": 1,
+          "score": 38,
+          "views": 15,
+          "likes": 7,
+          "bookmarks": 3,
+          "participants": 12,
+          "change": "FIRST"
+        },
+        {
+          "restaurantId": 12,
+          "name": "외가집",
+          "address": "부산 남구 전포대로92번길 3",
+          "rank": 2,
+          "score": 28,
+          "views": 10,
+          "likes": 6,
+          "bookmarks": 2,
+          "participants": 8,
+          "change": "FIRST"
+        }
+      ],
       "preview": true
     },
     "본사:previous": {
@@ -1392,7 +1454,32 @@
         "충남지사",
         "충북지사"
       ],
-      "entries": [],
+      "entries": [
+        {
+          "restaurantId": 2,
+          "name": "김씨네붴",
+          "address": "부산 남구 황령대로74번길 95",
+          "rank": 1,
+          "score": 38,
+          "views": 15,
+          "likes": 7,
+          "bookmarks": 3,
+          "participants": 12,
+          "change": "FIRST"
+        },
+        {
+          "restaurantId": 12,
+          "name": "외가집",
+          "address": "부산 남구 전포대로92번길 3",
+          "rank": 2,
+          "score": 28,
+          "views": 10,
+          "likes": 6,
+          "bookmarks": 2,
+          "participants": 8,
+          "change": "FIRST"
+        }
+      ],
       "preview": true
     },
     "부산지사:previous": {
